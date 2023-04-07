@@ -46,6 +46,19 @@
       </p>
       <span class = "heartIcon"></span>
     </aside>
+    <footer>
+      <div class="doginsInfo">
+        <figure>
+          <img src="./assets/imgs/logo.svg" alt="Dogin's Logo">
+          <figcaption>Para pets AUUdaciosos</figcaption>
+        </figure>
+        <div class = "socialMedia">
+          <a href=""><span class = "socialInsta"></span></a>
+          <a href=""><span class = "socialFacebook"></span></a>
+        </div>
+        <p>&#169; Dogin's, Inc. 2023. Petshop para pets AUUdaciosos!</p>
+      </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -192,3 +192,48 @@ a:visited {
   font-size: 1.625em;
   color: #000;
 }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #E5E5E5;
+}
+
+.doginsInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5em;
+}
+
+.doginsInfo figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.doginsInfo figure figcaption {
+  font-size: 1.563em;
+  font-weight: 700;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  column-gap: .75em;
+}
+
+.socialInsta {
+  background: transparent url(../imgs/iconInstagram.svg) no-repeat center;
+  width: 38px;
+  height: 38px;
+}
+
+.socialFacebook {
+  background: transparent url(../imgs/iconFacebook.svg) no-repeat center;
+  width: 38px;
+  height: 38px;
+}
