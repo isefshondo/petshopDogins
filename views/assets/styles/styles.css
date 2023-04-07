@@ -12,6 +12,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+header {
+  width: 100%;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 2.25em;
+  width: 100%;
+}
+
 a {
   display: flex;
   align-items: center;
@@ -20,13 +32,35 @@ a {
   text-decoration: none;
 }
 
-input[type = "search"] {
-  background: url(../imgs/searchIcon.svg) right no-repeat;
+.searchForm {
   border: .063em solid #C4C4C4;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 17.2%;
+}
+
+input[type = "search"] {
+  border: none;
+  border-radius: inherit;
   padding-block: 1.125em;
   padding-inline: 1.25em;
-  width: 17.2%
+  width: 100%;
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.searchButton {
+  background: transparent url(../imgs/searchIcon.svg) no-repeat center;
+  border: none;
+  border-radius: inherit;
+  color: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 a:visited {

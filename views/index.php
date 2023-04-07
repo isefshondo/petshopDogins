@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="./assets/styles/styles.css">
   </head>
   <body>
-    <input type="search" name="searchProdutc" id="searchProduct" placeholder = "O que o seu pet precisa?">
-    <a href="#">
-      <span class = "likeIcon"></span>
-      Mais comprados
-    </a>
-    <a href="#">
-      <span class = "cartIcon"></span>
-      Meu carrinho
-    </a>
-    <button class = "btnSeller">Sou vendedor</button>
-    <button class = "btnLoginSignin">Entrar/Cadastrar</button>
+    <header>
+      <div class="headerContainer">
+        <img src="./assets/imgs/logo.svg" alt="Dogin's Logo">
+        <!-- TODO: Make this search bar again -->
+        <form class = "searchForm">
+          <input type="search" name="searchProduct" id="searchProduct" placeholder = "O que seu pet precisa?">
+          <button type="submit" class = "searchButton">Search</button>
+        </form>
+        <a href="#">
+          <span class = "likeIcon"></span>
+          Mais comprados
+        </a>
+        <a href="#">
+          <span class = "cartIcon"></span>
+          Meu carrinho
+        </a>
+        <div class="buttonWrapper">
+          <button class = "btnSeller">Sou vendedor</button>
+          <button class = "btnLoginSignin">Entrar/Cadastrar</button>
+        </div>
+      </div>
+    </header>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
