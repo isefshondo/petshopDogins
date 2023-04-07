@@ -38,7 +38,13 @@
       </nav>
     </header>
     <aside class = "discountAlert">
-      <p><span class = "highlightDiscount"><strong>Cupom</strong> <span class = "sloganText">auudacioso</span> 10&#37; OFF +</span> brinde do dogin's na primeira compra <span class = "heartIcon"></span></span></p>
+      <p>
+        <span class = "highlightDiscount"><strong>Cupom</strong> 
+          <span class = "sloganText">auudacioso</span> 10&#37; OFF +
+        </span> 
+          brinde do dogin's na primeira compra
+      </p>
+      <span class = "heartIcon"></span>
     </aside>
     <script src="./assets/js/main.js"></script>
   </body>
