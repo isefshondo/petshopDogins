@@ -28,7 +28,18 @@
           <button class = "btnLoginSignin">Entrar/Cadastrar</button>
         </div>
       </div>
+      <nav class = "navCategory">
+        <ul>
+          <li>Categorias</li>
+          <li>Categorias</li>
+          <li>Categorias</li>
+          <li>Categorias</li>
+        </ul>
+      </nav>
     </header>
+    <aside class = "discountAlert">
+      <p><span class = "highlightDiscount"><strong>Cupom</strong> <span class = "sloganText">auudacioso</span> 10&#37; OFF +</span> brinde do dogin's na primeira compra <span class = "heartIcon"></span></span></p>
+    </aside>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
