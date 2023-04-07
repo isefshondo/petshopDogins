@@ -67,14 +67,19 @@ a:visited {
   color: var(--detailsText);
 }
 
+.buttonWrapper {
+  display: flex;
+  column-gap: 1.25em;
+}
+
 .btnSeller {
   background: #FFF;
   border: .063em solid var(--bgComponents);
   border-radius: 10px;
   color: var(--detailsText);
   font-weight: 500;
-  padding-block: 1.15%; /* 20px */
-  padding-inline: 1.75%; /* 30px */
+  padding-block: 1.25em;
+  padding-inline: 1.875em;
   cursor: pointer;
 }
 
@@ -83,7 +88,7 @@ a:visited {
   border-radius: 10px;
   border-width: 0;
   font-weight: 500;
-  padding: 1.15%; /* 20px */
+  padding: 1.25em;
   cursor: pointer;
 }
 

@@ -11,7 +11,6 @@
     <header>
       <div class="headerContainer">
         <img src="./assets/imgs/logo.svg" alt="Dogin's Logo">
-        <!-- TODO: Make this search bar again -->
         <form class = "searchForm">
           <input type="search" name="searchProduct" id="searchProduct" placeholder = "O que seu pet precisa?">
           <button type="submit" class = "searchButton">Search</button>
