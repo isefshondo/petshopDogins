@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --detailsText: rgba(0, 0, 0, 0.5);
+  --bgComponents: #85D3FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: var(--detailsText);
+  column-gap: .375em;
+  text-decoration: none;
+}
+
+input[type = "search"] {
+  background: url(../imgs/searchIcon.svg) right no-repeat;
+  border: .063em solid #C4C4C4;
+  border-radius: 10px;
+  padding-block: 1.125em;
+  padding-inline: 1.25em;
+  width: 17.2%
+}
+
+a:visited {
+  color: var(--detailsText);
+}
+
+.btnSeller {
+  background: #FFF;
+  border: .063em solid var(--bgComponents);
+  border-radius: 10px;
+  color: var(--detailsText);
+  font-weight: 500;
+  padding-block: 1.15%; /* 20px */
+  padding-inline: 1.75%; /* 30px */
+  cursor: pointer;
+}
+
+.btnLoginSignin {
+  background: var(--bgComponents);
+  border-radius: 10px;
+  border-width: 0;
+  font-weight: 500;
+  padding: 1.15%; /* 20px */
+  cursor: pointer;
+}
+
+.likeIcon {
+  background: url(../imgs/nfHeartIcon.svg) no-repeat;
+  background-size: cover;
+  display: block;
+  width: 1.75em;
+  height: 1.563em;
+}
+
+.cartIcon {
+  background: url(../imgs/cartIcon.svg) no-repeat;
+  background-size: cover;
+  display: block;
+  width: 1.625em;
+  height: 1.438em;
+}
