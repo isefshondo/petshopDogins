@@ -4,6 +4,7 @@
   --detailsText: rgba(0, 0, 0, 0.5);
   --bgComponents: #85D3FF;
   --secondaryComponents: #C4C4C4;
+  --secondaryBgComponents: #CDEEFF;
 }
 
 * {
@@ -139,12 +140,8 @@ a:visited {
 .discountAlert {
   width: 100%;
   background: var(--secondaryComponents);
-  display: flex;
   justify-content: center;
-  align-items: center;
   column-gap: .156em;
-  font-size: 1.25em;
-  font-weight: 500;
   text-align: center;
   padding-block-start: .375em;
   padding-block-end: .625em;
@@ -250,9 +247,58 @@ footer {
 
 .quickLinks ul li,
 .mostClicked ul li {
+  color: #000;
   list-style: none;
 }
 
-.quickLinks h3 {
+.quickLinks h3,
+.mostClicked h3 {
   font-size: 1.5em;
+}
+
+.categoryTitle,
+.discountAlert {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.categoryTitle {
+  column-gap: 1.563em;
+}
+
+#categoryProducts {
+  background: var(--secondaryBgComponents);
+  padding-block: 2.813em;
+  padding-inline: 5.625em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25em;
+}
+
+.categoriesWrapper {
+  display: flex;
+  column-gap: 1.563em;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryHolder {
+  background: #FFF;
+  width: 15%;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 500;
+  padding-block: 1.563em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25em;
+  border-radius: 20px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+.categoryHolder figure {
+  display: flex;
+  justify-content: center;
 }
