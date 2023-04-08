@@ -302,6 +302,17 @@ footer {
   justify-content: center;
 }
 
+#partnerBrands {
+  background: rgba(247, 247, 247, 0.68);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25em;
+}
+
+#partnerBrands header {
+  padding-inline: 5em;
+}
+
 .partnerSectionTitle {
   display: flex;
   align-items: center;
@@ -309,7 +320,32 @@ footer {
   font-size: 1.875em;
 }
 
+.partnerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2em;
+}
+
 .partnerWrapper figure {
   display: flex;
   justify-content: center;
+}
+
+.paginationHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .25em;
+  padding-block-end: 8.375em;
+}
+
+.paginationHolder li {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);;
+  padding-block: .5em;
+  padding-inline: 1em;
+  list-style: none;
+  cursor: pointer;
 }

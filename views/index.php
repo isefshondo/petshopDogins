@@ -21,9 +21,21 @@
             <figure>
               <img src="./assets/imgs/royal-canin.png" alt="Royal Canin is a partner brand">
             </figure>
-            <figure></figure>
+            <figure>
+              <img src="./assets/imgs/gran-plus.png" alt="Gran Plus is a partner brand">
+            </figure>
+            <figure>
+              <img src="./assets/imgs/nexgard.png" alt="NexGard is a partner brand">
+            </figure>
           </div>
         </main>
+        <ul id = "pagination" class = "paginationHolder">
+          <li>&#60;</li>
+          <li>Anterior</li>
+          <!-- Pagination numbers go here. Example: <li>5</li> (No specific style) -->
+          <li>Próxima</li>
+          <li>&#62;</li>
+        </ul>
       </section>
     </main>
     <?php include("./partials/footer.php")?>
