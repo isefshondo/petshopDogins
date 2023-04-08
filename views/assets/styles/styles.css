@@ -332,18 +332,24 @@ footer {
   justify-content: center;
 }
 
-.paginationHolder {
+.paginationPanel {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: .25em;
   padding-block-end: 8.375em;
+}
+
+.paginationHolder {
+  background-color: #FFF;
+  display: flex;
+  column-gap: .25em;
+  padding: .5em;
 }
 
 .paginationHolder li {
   background-color: #FFF;
   border-radius: 5px;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.05);;
   padding-block: .5em;
   padding-inline: 1em;
   list-style: none;
