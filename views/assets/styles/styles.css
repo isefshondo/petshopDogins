@@ -199,13 +199,16 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-top: 1px solid #E5E5E5;
+  padding-block: 2.5em;
 }
 
 .doginsInfo {
   display: flex;
   flex-direction: column;
   row-gap: .5em;
+  color: var(--detailsText);
 }
 
 .doginsInfo figure {
@@ -216,6 +219,7 @@ footer {
 }
 
 .doginsInfo figure figcaption {
+  color: #000;
   font-size: 1.563em;
   font-weight: 700;
 }
@@ -236,4 +240,19 @@ footer {
   background: transparent url(../imgs/iconFacebook.svg) no-repeat center;
   width: 38px;
   height: 38px;
+}
+
+.footButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: .938em;
+}
+
+.quickLinks ul li,
+.mostClicked ul li {
+  list-style: none;
+}
+
+.quickLinks h3 {
+  font-size: 1.5em;
 }

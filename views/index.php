@@ -58,6 +58,26 @@
         </div>
         <p>&#169; Dogin's, Inc. 2023. Petshop para pets AUUdaciosos!</p>
       </div>
+      <nav class = "quickLinks">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Sobre nós</li>
+          <li>Contatos</li>
+          <li>SAC</li>
+        </ul>
+      </nav>
+      <nav class = "mostClicked">
+        <h3>Mais acessados</h3>
+        <ul>
+          <li>Mais comprados</li>
+          <li>Brinquedos</li>
+          <li>Ração para filhotes</li>
+        </ul>
+      </nav>
+      <div class = "footButtonWrapper">
+        <button class = "btnLoginSignin">Entrar/Cadastrar</button>
+        <button class = "btnSeller">Sou vendedor</button>
+      </div>
     </footer>
     <script src="./assets/js/main.js"></script>
   </body>
