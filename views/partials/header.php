@@ -20,10 +20,11 @@
   </div>
   <nav class = "navCategory">
     <ul>
-      <li>Categorias</li>
-      <li>Categorias</li>
-      <li>Categorias</li>
-      <li>Categorias</li>
+      <a href="#"><li>Acessórios</li></a>
+      <a href="#"><li>Alimentação</li></a>
+      <a href="#"><li>Brinquedos</li></a>
+      <a href="#"><li>Medicamentos</li></a>
+      <a href="#"><li>Higiene e Limpeza</li></a>
     </ul>
   </nav>
 </header>

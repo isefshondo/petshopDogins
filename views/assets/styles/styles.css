@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  background: rgba(247, 247, 247, 0.68);
+}
+
 .searchForm {
   border: .063em solid var(--secondaryComponents);
   border-radius: 10px;
