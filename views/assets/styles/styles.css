@@ -192,7 +192,6 @@ a:visited {
 
 footer {
   width: 100%;
-  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-around;
@@ -299,6 +298,18 @@ footer {
 }
 
 .categoryHolder figure {
+  display: flex;
+  justify-content: center;
+}
+
+.partnerSectionTitle {
+  display: flex;
+  align-items: center;
+  column-gap: .625em;
+  font-size: 1.875em;
+}
+
+.partnerWrapper figure {
   display: flex;
   justify-content: center;
 }

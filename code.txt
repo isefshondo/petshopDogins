@@ -1,0 +1,13 @@
+      <section id="categoryProducts">
+        <header>
+          <div class="categoryTitle">
+            <h1>Categorias de produtos</h1>
+            <span class = "heartIcon"></span>
+          </div>
+        </header>
+        <main>
+          <div class="categoriesWrapper">
+            <!-- TODO: Colocar os cards de categorias aqui -->
+          </div>
+        </main>
+      </section>
