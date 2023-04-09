@@ -89,8 +89,8 @@ a:visited {
   color: var(--detailsText);
   font-size: 1.25em;
   font-weight: 500;
-  padding-block: 1.125em;
-  padding-inline: 1.875em;
+  padding-block: 20px;
+  padding-inline: 28px;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ a:visited {
   border-width: 0;
   font-size: 1.25em;
   font-weight: 500;
-  padding: 1.125em;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -285,27 +285,27 @@ footer {
   transform: rotate(180deg);
 }
 
-/* Here's the problem of Weekly */
-
 .productsWrapper {
-  width: 100%;
+  width: 100vw;
   display: flex;
   column-gap: 1.563em;
+  padding-block: 2.5em;
   padding-inline: 3.75em;
 }
 
 .productCard {
-  width: 20%;
+  width: 340px;
+  min-width: 340px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
   row-gap: 1.563em;
   background-color: #FFF;
   border-radius: 20px;
-  padding-block: 2.375em;
-  padding-inline: 2.25em;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   color: var(--detailsText);
-  box-sizing: border-box;
-  margin-block: 2.5em;
+  padding-block: 38px;
+  padding-inline: 36px;
 }
 
 .productImg {
