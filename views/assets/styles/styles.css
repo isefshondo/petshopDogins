@@ -328,10 +328,6 @@ footer {
   row-gap: 1.875em;
 }
 
-#productsCategories header {
-  padding-inline: 5.5em;
-}
-
 .categories {
   display: flex;
   justify-content: center;
@@ -353,4 +349,79 @@ footer {
   padding-block-start: 2.5em;
   padding-block-end: 1.25em;
   padding-inline: 2.5em;
+}
+
+#secondShowProducts {
+  padding-block-start: 3.125em;
+}
+
+/* Doing it kinda correctly */
+#searchByPets {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2.813em;
+  padding-block-end: 2.625em;
+}
+
+.dog-category {
+  grid-area: dogCategory;
+  background: transparent url("../imgs/searchByPets/dog.jpg") no-repeat top;
+  position: relative;
+}
+
+.cat-category {
+  grid-area: catCategory;
+  background: transparent url("../imgs/searchByPets/cat.jpg") no-repeat right;
+}
+
+.others-category {
+  grid-area: othersCategory;
+  background: transparent url("../imgs/searchByPets/bunnyRabbit.jpg") no-repeat top;
+}
+
+.puppies-category {
+  grid-area: puppiesCategory;
+  background: transparent url("../imgs/searchByPets/puppiesBeagles.jpg") no-repeat top;
+}
+
+.dog-category,
+.cat-category,
+.others-category,
+.puppies-category {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.petsCategories {
+  display: grid;
+  width: 82.5%;
+  height: 100vh;
+  grid-template-areas: 
+    "dogCategory dogCategory catCategory"
+    "othersCategory puppiesCategory puppiesCategory";
+  grid-template-columns: 1.75fr 1fr 1.75fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 2.25em;
+}
+
+.dog-category h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-inline-end: 2%;
+  padding-block-end: 18%;
+}
+
+.others-category h1 {
+  text-align: center;
+  padding-block-start: 10%;
 }
