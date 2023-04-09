@@ -38,58 +38,6 @@ include("./components/sectionHeader.php");
               <h2>R&#36; Preço produto</h2>
             </hgroup>
           </li>
-          <li class="productCard">
-            <figure class="productImg">
-              <img src="./assets/imgs/firstToy.png" alt="Produtos AUUdaciosos">
-            </figure>
-            <hgroup class="productDesc">
-              <h2>Nome do produto</h2>
-              <h3>Marca: Marca do produto</h3>
-            </hgroup>
-            <hgroup class="productPrice">
-              <h3>R&#36; Preço produto</h3>
-              <h2>R&#36; Preço produto</h2>
-            </hgroup>
-          </li>
-          <li class="productCard">
-            <figure class="productImg">
-              <img src="./assets/imgs/firstToy.png" alt="Produtos AUUdaciosos">
-            </figure>
-            <hgroup class="productDesc">
-              <h2>Nome do produto</h2>
-              <h3>Marca: Marca do produto</h3>
-            </hgroup>
-            <hgroup class="productPrice">
-              <h3>R&#36; Preço produto</h3>
-              <h2>R&#36; Preço produto</h2>
-            </hgroup>
-          </li>
-          <li class="productCard">
-            <figure class="productImg">
-              <img src="./assets/imgs/firstToy.png" alt="Produtos AUUdaciosos">
-            </figure>
-            <hgroup class="productDesc">
-              <h2>Nome do produto</h2>
-              <h3>Marca: Marca do produto</h3>
-            </hgroup>
-            <hgroup class="productPrice">
-              <h3>R&#36; Preço produto</h3>
-              <h2>R&#36; Preço produto</h2>
-            </hgroup>
-          </li>
-          <li class="productCard">
-            <figure class="productImg">
-              <img src="./assets/imgs/firstToy.png" alt="Produtos AUUdaciosos">
-            </figure>
-            <hgroup class="productDesc">
-              <h2>Nome do produto</h2>
-              <h3>Marca: Marca do produto</h3>
-            </hgroup>
-            <hgroup class="productPrice">
-              <h3>R&#36; Preço produto</h3>
-              <h2>R&#36; Preço produto</h2>
-            </hgroup>
-          </li>
         </ul>
       </section>
       <!--<section id="productsCategories">

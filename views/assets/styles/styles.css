@@ -286,11 +286,17 @@ footer {
 }
 
 .productsWrapper {
-  width: 100vw;
+  width: calc(100vw - 3.75em);
   display: flex;
   column-gap: 1.563em;
   padding-block: 2.5em;
   padding-inline: 3.75em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.productsWrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .productCard {
