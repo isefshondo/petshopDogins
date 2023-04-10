@@ -105,5 +105,7 @@ include("./components/sectionHeader.php");
     </ul>
   </section>
 </main>
-<?php include("./partials/footer.php") ?>
-<?php include("./blades/footer.php") ?>
+<?php
+include("./partials/footer.php");
+include("./blades/footer.php"); 
+?>

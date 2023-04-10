@@ -464,3 +464,44 @@ footer {
 .brandsHolder::-webkit-scrollbar {
   display: none;
 }
+
+#pageAlert {
+  background-color: #CDEEFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px;
+  padding-inline: 160px;
+}
+
+.notFoundAlert {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.875em;
+}
+
+.notFoundAlert h1 {
+  font-size: 50px;
+}
+
+.notFoundAlert p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.notFoundAlert div button {
+  background-color: #FFF;
+  color: #000;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-block: 18px;
+  padding-inline: 3.125em;
+  cursor: pointer;
+}
+
+#recommendedProducts {
+  padding-block: 1.25em;
+}
