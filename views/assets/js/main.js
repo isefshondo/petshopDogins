@@ -2,6 +2,9 @@ const productsWrapperP1 = [...document.querySelectorAll('.productsWrapper')];
 const productsWrapperP2 = [...document.querySelectorAll('.secondProductsWrapper')];
 const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
 
+let purchaseFrequently = document.getElementById('purchaseFrequently');
+let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequentlyInfo')[0];
+
 productsWrapperP1.forEach((item, i) => {
   const previousButton = [...document.querySelectorAll('.btnPrevFirstProducts')];
   const nextButton = [...document.querySelectorAll('.btnNextFirstProducts')];
@@ -48,3 +51,7 @@ brandsWrapper.forEach((item, i) => {
     item.scrollLeft += brandsWrapperWidth;
   });
 });
+
+purchaseFrequently ? purchaseFrequently.addEventListener('click', () => {
+  !purchaseFrequently.checked ? purchaseFrequentlyContainer.style.background = "#FF0000" : purchaseFrequentlyContainer.style.background = "#49A971";
+}) : null;

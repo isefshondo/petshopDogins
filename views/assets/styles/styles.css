@@ -506,19 +506,42 @@ footer {
   padding-block: 1.25em;
 }
 
-#purchaseDetaisl {
-  grid-area: purchaseDetails;
+#purchaseOptions {
+  grid-area: purchaseOption;
   display: flex;
   flex-direction: column;
   row-gap: 30px; /* Maybe later change to em unit. */
 }
 
-#finishPurchase {
+#purchaseFinishDetails {
   grid-area: finishPurchase;
 }
 
 .detailsHolder {
   width: 100vw;
   display: grid;
-  grid-template-areas: "purchaseDetails purchaseDetails finishPurchase";
+  grid-template-areas: "purchaseOptions purchaseOptions finishPurchase";
+}
+
+#purchaseFrequently {
+  appearance: none;
+  background-color: #FFF;
+  width: 2.813em;
+  height: 2.813em;
+  border: none;
+  border-radius: 50%;
+}
+
+.purchaseFrequentlyInfo {
+  display: flex;
+  align-items: center;
+  column-gap: .75em;
+  background-color: #49A971;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #FFF;
+}
+
+#purchaseFrequently:checked {
+  background: #FFF url(../imgs/checked.svg) no-repeat center;
 }
