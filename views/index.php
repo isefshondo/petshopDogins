@@ -22,7 +22,7 @@ include("./components/sectionHeader.php");
   </section> -->
   <section id="firstShowProducts">
     <?php
-    createHeaderSection("Produtos AUUdaciosos", true);
+    createHeaderSection("Produtos AUUdaciosos", true, "FirstProducts");
     ?>
     <ul class="productsWrapper">
       <li class="productCard">
@@ -53,15 +53,15 @@ include("./components/sectionHeader.php");
   </section>
   <section id="secondShowProducts">
     <?php
-    createHeaderSection("Produtos AUUdaciosos", true);
+    createHeaderSection("Produtos AUUdaciosos", true, "SecondProducts");
     ?>
-    <ul class="productsWrapper">
+    <ul class="secondProductsWrapper">
       <li class="productCard">
         <figure class="productImg">
           <img src="./assets/imgs/firstToy.png" alt="Produtos AUUdaciosos">
         </figure>
         <hgroup class="productDesc">
-          <h2>Bicho de pelúcia</h2>
+          <h2>Nome do produto</h2>
           <h3>Marca: Marca do produto</h3>
         </hgroup>
         <hgroup class="productPrice">
@@ -93,6 +93,16 @@ include("./components/sectionHeader.php");
         </figure>
       </section>
     </div>
+  </section>
+  <section id="partnerBrands">
+    <?php
+    createHeaderSection("Marcas AUUdaciosas", true, "PartnerBrands");
+    ?>
+    <ul class="brandsHolder">
+      <li>
+        <img src="./assets/imgs/brands/whiskas.png" alt="Nossa parceria com o Whiskas!">
+      </li>
+    </ul>
   </section>
 </main>
 <?php include("./partials/footer.php") ?>

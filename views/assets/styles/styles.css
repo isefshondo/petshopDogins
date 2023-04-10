@@ -285,7 +285,8 @@ footer {
   transform: rotate(180deg);
 }
 
-.productsWrapper {
+.productsWrapper,
+.secondProductsWrapper {
   width: calc(100vw - 3.75em);
   display: flex;
   column-gap: 1.563em;
@@ -295,6 +296,7 @@ footer {
   scroll-behavior: smooth;
 }
 
+.secondProductsWrapper::-webkit-scrollbar,
 .productsWrapper::-webkit-scrollbar {
   display: none;
 }
@@ -422,4 +424,27 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 2.25em;
+}
+
+#partnerBrands {
+  background-color: var(--secondaryBgComponents);
+  padding-block: 3.438em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2.5em;
+}
+
+.brandsHolder {
+  list-style: none;
+  display: flex;
+  column-gap: 2em;
+  width: calc(100vw - 4.688em);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.brandsHolder::-webkit-scrollbar {
+  display: none;
 }
