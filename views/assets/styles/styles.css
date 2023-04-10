@@ -386,12 +386,22 @@ footer {
   background: transparent url("../imgs/searchByPets/dog.jpg") no-repeat;
   background-position: top right;
   width: 60%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  padding-inline-end: 16px;
+  padding-block-end: 120px;
 }
 
 .cat-category {
   background: transparent url("../imgs/searchByPets/cat.jpg") no-repeat;
   background-position: top right;
   width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  padding-inline-start: 46px;
+  padding-block-end: 68px;
 }
 
 .others-category {
@@ -400,10 +410,16 @@ footer {
   width: 40%;
 }
 
+.others-category h1 {
+  text-align: center;
+  transform: scaleX(-1);
+}
+
 .puppies-category {
   background: transparent url("../imgs/searchByPets/puppiesBeagles.jpg") no-repeat;
   background-position: top center;
   width: 60%;
+  padding: 64px;
 }
 
 .dog-category,
