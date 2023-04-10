@@ -505,3 +505,20 @@ footer {
 #recommendedProducts {
   padding-block: 1.25em;
 }
+
+#purchaseDetaisl {
+  grid-area: purchaseDetails;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px; /* Maybe later change to em unit. */
+}
+
+#finishPurchase {
+  grid-area: finishPurchase;
+}
+
+.detailsHolder {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "purchaseDetails purchaseDetails finishPurchase";
+}
