@@ -651,3 +651,89 @@ footer {
   display: flex;
   column-gap: 15px;
 }
+
+/*Style Login/Cadastro*/
+#img-login img{
+  position: flex;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#forms-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 80px;
+  
+}
+
+#forms{
+  border-style: solid;
+  border-color: var(--bgComponents);
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 3rem;
+  margin-top: 20px;
+  width: 75%;
+}
+#text-login{
+  font-size: 0.75em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btnLoginWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-link{
+  font-size: 0.65em;
+  font-weight: 500;
+  color: #727272;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 12px;
+}
+
+#text-login label {
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 0.7px solid;
+  color: #313131;
+}
+
+.btnLogin {
+  background: var(--bgComponents);
+  border-radius: 10px;
+  border-width: 0;
+  font-size: 1.25em;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 80%;
+  align-items: center;
+}
+#titulo-forms{
+  display: flex;
+  column-gap: 10px;
+}
+
+#img-cadastro img{
+  position: flex;
+  float: right;
+  width: 50%;
+
+}
+/*Fim do Style Login*/
