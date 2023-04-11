@@ -547,21 +547,11 @@ footer {
 }
 
 /* Starting it off well */
-
-#viewProductDetails {
-  grid-area: productDetails;
-}
-
-#viewPriceDetails {
-  grid-area: priceDetails;
-}
-
 .viewPurchase {
   width: 100vw;
   padding-block-start: 3.125em;
   padding-block-end: 8.75em;
-  display: grid;
-  grid-template-areas: "productDetails productDetails productDetails priceDetails";
+  display: flex;
 }
 
 .viewPriceCard {
@@ -569,6 +559,14 @@ footer {
   border-radius: 20px;
   border-width: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-block: 3.75em;
+  padding-inline: 2.5em;
+}
+
+.chooseBuyFrequently {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25em;
 }
 
 .chooseBuyFrequently hgroup {
@@ -629,4 +627,14 @@ footer {
   text-align: justify;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.chooseBuy h1 {
+  font-size: 30px;
+  color: #333;
+}
+
+.btnBuyProduct {
+  display: flex;
+  column-gap: 15px;
 }
