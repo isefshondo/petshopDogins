@@ -5,13 +5,17 @@ include("./components/sectionHeader.php");
 ?>
 <main>
   <?php include("./components/couponNotice.php") ?>
-  <!-- <section id="imgs-carousel">
+  <section id="imgs-carousel">
     <div id="imgs-slider" class="imgs-slider">
       <?php
       $imgsCarousel = array(
         array(
-          "imgName" => "img-carousel-01.png",
-          "alt" => "Seu dog AUUdacioso!"
+          "imgName" => "firstCarousel.png",
+          "alt" => "Tudo o que seu pet AUUdacioso precisa!"
+        ),
+        array(
+          "imgName" => "secondCarousel.png",
+          "alt" => "Tudo para o seu pet AUUdacioso!"
         ),
       );
       foreach ($imgsCarousel as $img) {
@@ -19,7 +23,7 @@ include("./components/sectionHeader.php");
       }
       ?>
     </div>
-  </section> -->
+  </section>
   <section id="firstShowProducts">
     <?php
     createHeaderSection("Produtos AUUdaciosos", true, "FirstProducts");

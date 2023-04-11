@@ -52,6 +52,3 @@ brandsWrapper.forEach((item, i) => {
   });
 });
 
-purchaseFrequently ? purchaseFrequently.addEventListener('click', () => {
-  !purchaseFrequently.checked ? purchaseFrequentlyContainer.style.background = "#FF0000" : purchaseFrequentlyContainer.style.background = "#49A971";
-}) : null;

@@ -169,6 +169,24 @@ a:visited {
   height: 26px;
 }
 
+#imgs-carousel {
+  width: 100vw;
+  padding-block: 1.375em;
+  padding-inline-start: 3.125em;
+}
+
+.imgs-slider {
+  width: 100%;
+  display: flex;
+  column-gap: 1.75em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.imgs-slider img {
+  border-radius: 50px;
+}
+
 footer {
   width: 100%;
   bottom: 0;
@@ -242,15 +260,6 @@ footer {
   font-weight: 500;
 }
 
-#imgs-carousel {
-  padding: 1.563em;
-}
-
-.imgs-slider {
-  display: flex;
-  column-gap: 1.75em;
-}
-
 .showProducts {
   display: flex;
   justify-content: space-between;
@@ -296,6 +305,7 @@ footer {
   scroll-behavior: smooth;
 }
 
+.imgs-slider::-webkit-scrollbar,
 .secondProductsWrapper::-webkit-scrollbar,
 .productsWrapper::-webkit-scrollbar {
   display: none;
