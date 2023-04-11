@@ -179,12 +179,15 @@ a:visited {
   width: 100%;
   display: flex;
   column-gap: 1.75em;
-  overflow-x: auto;
   scroll-behavior: smooth;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 .imgs-slider img {
+  width: 70%;
   border-radius: 50px;
+  scroll-snap-align: center;
 }
 
 footer {

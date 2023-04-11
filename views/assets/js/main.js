@@ -1,6 +1,9 @@
 const productsWrapperP1 = [...document.querySelectorAll('.productsWrapper')];
 const productsWrapperP2 = [...document.querySelectorAll('.secondProductsWrapper')];
 const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
+const mainCarousel = document.querySelector('.imgs-slider');
+const carouselImages = mainCarousel.querySelectorAll('img');
+let currentImgIndex = 0;
 
 let purchaseFrequently = document.getElementById('purchaseFrequently');
 let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequentlyInfo')[0];
@@ -52,3 +55,9 @@ brandsWrapper.forEach((item, i) => {
   });
 });
 
+function moveCarouselImage () {
+  currentImgIndex = (currentImgIndex + 1) % carouselImages.length;
+  mainCarousel.scrollLeft = currentImgIndex * carouselImages[0].offsetWidth;
+}
+
+setInterval(moveCarouselImage, 2500);
