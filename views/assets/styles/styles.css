@@ -545,3 +545,88 @@ footer {
 #purchaseFrequently:checked {
   background: #FFF url(../imgs/checked.svg) no-repeat center;
 }
+
+/* Starting it off well */
+
+#viewProductDetails {
+  grid-area: productDetails;
+}
+
+#viewPriceDetails {
+  grid-area: priceDetails;
+}
+
+.viewPurchase {
+  width: 100vw;
+  padding-block-start: 3.125em;
+  padding-block-end: 8.75em;
+  display: grid;
+  grid-template-areas: "productDetails productDetails productDetails priceDetails";
+}
+
+.viewPriceCard {
+  background-color: #FFF;
+  border-radius: 20px;
+  border-width: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chooseBuyFrequently hgroup {
+  display: flex;
+  align-items: center;
+  column-gap: .75em;
+}
+
+.chooseBuyFrequently hgroup h3 {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+
+.getDiscountPrice {
+  background-color: var(--bgComponents);
+  border-radius: 100px;
+  padding-block: .125em;
+  padding-inline: .625em;
+  font-size: 16px;
+}
+
+.disclaimerIcon {
+  width: 30px;
+  height: 30px;
+  background: transparent url(../imgs/disclaimer.svg) no-repeat center;
+}
+
+.chooseBuyFrequently h1 {
+  font-size: 40px;
+  color: #4B8CEF;
+}
+
+.btnBuyFrequently {
+  width: 20.5em;
+  display: flex;
+  background-color: #49A971;
+  border-width: 0;
+  border-radius: 20px;
+  padding-block: 1.25em;
+  color: #FFF;
+  font-weight: 600;
+  text-align: left;
+  font-size: 20px;
+  column-gap: .75em;
+  padding-inline: .875em;
+}
+
+.checkMarkIcon {
+  display: block;
+  width: 60px;
+  height: 45px;
+  background: transparent url(../imgs/checkIcon.svg) no-repeat center;
+}
+
+.chooseBuyFrequently p {
+  width: 20.5em;
+  text-align: justify;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
