@@ -112,12 +112,20 @@ a:visited {
   height: 1.563em;
 }
 
+.blackCartIcon,
 .cartIcon {
-  background: url(../imgs/cartIcon.svg) no-repeat;
   background-size: cover;
   display: block;
   width: 1.625em;
   height: 1.438em;
+}
+
+.cartIcon {
+  background: url(../imgs/cartIcon.svg) no-repeat;
+}
+
+.blackCartIcon {
+  background: url(../imgs/blackCartIcon.svg) no-repeat;
 }
 
 .navCategory {
@@ -568,12 +576,16 @@ footer {
 }
 
 .viewPriceCard {
+  width: 410px;
   background-color: #FFF;
   border-radius: 20px;
   border-width: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-block: 3.75em;
   padding-inline: 2.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
 }
 
 .chooseBuyFrequently {
@@ -614,7 +626,7 @@ footer {
 }
 
 .btnBuyFrequently {
-  width: 20.5em;
+  width: 100%;
   display: flex;
   background-color: #49A971;
   border-width: 0;
@@ -630,13 +642,13 @@ footer {
 
 .checkMarkIcon {
   display: block;
-  width: 60px;
+  width: 75px;
   height: 45px;
   background: transparent url(../imgs/checkIcon.svg) no-repeat center;
 }
 
 .chooseBuyFrequently p {
-  width: 20.5em;
+  width: 100%;
   text-align: justify;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -648,6 +660,94 @@ footer {
 }
 
 .btnBuyProduct {
+  width: 100%;
   display: flex;
   column-gap: 15px;
+  background-color: var(--bgComponents);
+  border-width: 0;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-block: 20px;
+  padding-inline: 32px;
+  text-align: left;
+  align-items: center;
+}
+
+.deliveryPolicies {
+  width: 65%;
+  background-color: #FFF;
+  border-width: 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-block: 45px;
+  padding-inline: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: .625em;
+}
+
+.deliveryPolicies header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.deliveryPolicies header button {
+  background: transparent;
+  border-width: 0;
+  color: #4B8CEF;
+  outline: none;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.disclaimerPolicies {
+  color: #777;
+  font-size: 1.875em;
+  font-weight: 700;
+}
+
+.freightMarkup {
+  color: #4B8CEF;
+}
+
+.disclaimerProductWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #777;
+}
+
+.viewProductInfo {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+
+.viewProductInfo span {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.viewProductInfo li {
+  width: 15%;
+  list-style: none;
+  background-color: #FFF;
+  padding-block: .625em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#doginsPolicies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
