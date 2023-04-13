@@ -107,13 +107,53 @@ include("./components/viewProductImages.php");
       <span></span>
       <section id = "information" class = "toggleSection">
         <header>
-          <span class = "infoIcon"></span>
-          Informações
+          <div class = "alignIconText">
+            <span class = "infoIcon"></span>
+            Informações
+          </div>
+          <button type = "button" id="buttonToggle" class="bottom-arrow">
+          </button>
         </header>
-        <h1>Fantasia de Unicórnio Cansei de Ser Gato</h1>
-        <p>
-          Um resumão.
-        </p>
+        <div class = "productInfoDetails">
+          <h1>Fantasia de Unicórnio Cansei de Ser Gato</h1>
+          <p>
+            Um resumão.
+          </p>
+        </div>
+      </section>
+      <span></span>
+      <section id = "information" class = "toggleSection">
+        <header>
+          <div class = "alignIconText">
+            <span class = "infoIcon"></span>
+            Especificações
+          </div>
+          <button type = "button" id="buttonToggle" class="bottom-arrow">
+          </button>
+        </header>
+        <div class = "productInfoDetails">
+          <h1>Fantasia de um cachorro dinossauro</h1>
+          <p>
+            Um resumão.
+          </p>
+        </div>
+      </section>
+      <span></span>
+      <section id = "information" class = "toggleSection">
+        <header>
+          <div class = "alignIconText">
+            <span class = "infoIcon"></span>
+            Informações
+          </div>
+          <button type = "button" id="buttonToggle" class="bottom-arrow">
+          </button>
+        </header>
+        <div class = "productInfoDetails">
+          <h1>Fantasia de Unicórnio Cansei de Ser Gato</h1>
+          <p>
+            Um resumão.
+          </p>
+        </div>
       </section>
     </div>
   </section>

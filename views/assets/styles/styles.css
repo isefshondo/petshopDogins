@@ -720,12 +720,6 @@ footer {
   justify-content: space-between;
 }
 
-.viewProductInfo span {
-  display: block;
-  width: 32px;
-  height: 32px;
-}
-
 .viewProductInfo li {
   list-style: none;
   background-color: #FFF;
@@ -792,30 +786,34 @@ footer {
   margin-inline: 50px;
 }
 
-.infoIcon,
-.specificIcon,
-.ratingsIcon,
-.questionsIcon {
+.infoIcon, .specificIcon,
+.ratingsIcon, .questionsIcon,
+.bottom-arrow {
   display: block;
-  background-size: contain;
   width: 2.188em;
   height: 2.188em;
+  background-size: contain;
 }
 
 .infoIcon {
-  background: transparent url(../imgs/icon/infomations.svg) no-repeat center;
+  background: url(../imgs/icon/infomations.svg) no-repeat center;
 }
 
 .specificIcon {
-  background: transparent url(../imgs/icon/especificIcon.svg) no-repeat center;
+  background: url(../imgs/icon/especificIcon.svg) no-repeat center;
 }
 
 .ratingsIcon {
-  background: transparent url(../imgs/icon/ratings.svg) no-repeat center;
+  background: url(../imgs/icon/ratings.svg) no-repeat center;
 }
 
 .questionsIcon {
-  background: transparent url(../imgs/icon/questions.svg) no-repeat center;
+  background: url(../imgs/icon/questions.svg) no-repeat center;
+}
+
+.bottom-arrow {
+  background: url(../imgs/icon/bottom-arrow.svg) no-repeat center;
+  border: none;
 }
 
 .toggleSection {
@@ -826,6 +824,12 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  color: var(--detailsText);
+}
+
+.toggleSection header {
+  display: flex;
+  justify-content: space-between;
 }
 
 #viewProductsDetails{
@@ -884,4 +888,16 @@ footer {
 #productImage{
   max-width: 80%;
   max-height: 100%;
+}
+
+.alignIconText {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.productInfoDetails {
+  display: none;
 }

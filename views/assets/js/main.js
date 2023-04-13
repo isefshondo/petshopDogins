@@ -2,6 +2,9 @@ const productsWrapperP1 = [...document.querySelectorAll('.productsWrapper')];
 const productsWrapperP2 = [...document.querySelectorAll('.secondProductsWrapper')];
 const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
 const mainCarousel = document.querySelector('.imgs-slider');
+const buttonToggleInfo = [...document.querySelectorAll('#buttonToggle')];
+const productTextDetails = [...document.querySelectorAll('.productInfoDetails')];
+console.log(buttonToggleInfo, productTextDetails)
 
 const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
 const productImage = document.getElementById('productImage');
@@ -75,4 +78,11 @@ otherProductImages.forEach((item, i) => {
       productImage.src = otherProductImage.src;
     });
   }
+});
+
+buttonToggleInfo.forEach((item, i) => {
+  buttonToggleInfo[i].addEventListener('click', () => {
+    let styleDisplay = productTextDetails[i].style.display;
+    !styleDisplay ? productTextDetails[i].style.display = "block" : productTextDetails[i].style.display = "";
+  })
 });
