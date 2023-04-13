@@ -729,15 +729,15 @@ footer {
 .viewProductInfo li {
   list-style: none;
   background-color: #FFF;
-  padding-block: .625em;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
-  padding-block: 15px;
-  padding-inline: 25px;
+  column-gap: 1.25em;
+  font-weight: 600;
+  padding-block: .938em;
+  padding-inline: 1.25em;
 }
 
 #doginsPolicies {
@@ -797,7 +797,7 @@ footer {
 .ratingsIcon,
 .questionsIcon {
   display: block;
-  background-size: cover;
+  background-size: contain;
   width: 2.188em;
   height: 2.188em;
 }
@@ -828,4 +828,60 @@ footer {
   row-gap: 30px;
 }
 
-/* Starting everything OK */
+#viewProductsDetails{
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid #000;
+}
+
+.viewProductImages{
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid #49A971;
+}
+
+#viwerProductImage{
+  width: 60%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+.otherProductImages{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherProductImages_item{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--secondaryComponents);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.otherProductImages_item.active{
+  border: 3px solid var(--bgComponents);
+}
+
+.otherProductImages_item.void{
+  cursor: auto;
+}
+
+.otherProductImage{
+  width: 90%;
+  height: min-content;
+}
+
+#productImage{
+  max-width: 80%;
+  max-height: 100%;
+}

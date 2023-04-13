@@ -3,13 +3,20 @@ include("./blades/header.php");
 include("./partials/header.php");
 include("./components/sectionHeader.php");
 include("./components/productCard.php");
+include("./components/viewProductImages.php");
 ?>
 <main>
   <?php include("./components/couponNotice.php") ?>
   <section id = "viewOneProduct"
-    style = "padding-block-start: 1.875em; padding-inline: 3.125em;">
-    <form style = "display: grid; grid-template-columns: 3.5fr 1fr; column-gap: 1.875em;">
+    style = "padding-block-start: 1.875em; padding-inline: 3.125em;"
+  >
+    <form 
+      style = "display: grid; grid-template-columns: 3.5fr 1fr; column-gap: 1.875em; margin-bottom: 3em;"
+    >
       <section id = "viewProductCard" class = "viewProductCard">
+        <?php
+        createProductImageViewer();
+        ?>
       </section>
       <section id = "viewPriceCard" class = "viewPriceCard">
         <header class = "chooseBuyFrequently">

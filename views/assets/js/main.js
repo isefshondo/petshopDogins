@@ -2,7 +2,10 @@ const productsWrapperP1 = [...document.querySelectorAll('.productsWrapper')];
 const productsWrapperP2 = [...document.querySelectorAll('.secondProductsWrapper')];
 const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
 const mainCarousel = document.querySelector('.imgs-slider');
-const carouselImages = mainCarousel.querySelectorAll('img');
+
+const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
+const productImage = document.getElementById('productImage');
+
 let currentImgIndex = 0;
 
 let purchaseFrequently = document.getElementById('purchaseFrequently');
@@ -56,8 +59,20 @@ brandsWrapper.forEach((item, i) => {
 });
 
 function moveCarouselImage () {
+  const carouselImages = mainCarousel.querySelectorAll('img');
   currentImgIndex = (currentImgIndex + 1) % carouselImages.length;
   mainCarousel.scrollLeft = currentImgIndex * carouselImages[0].offsetWidth;
 }
 
-setInterval(moveCarouselImage, 2500);
+mainCarousel ? setInterval(moveCarouselImage, 2500) : null;
+
+otherProductImages.forEach((item, i) => {
+  if(!otherProductImages[i].classList.contains('void')){
+    otherProductImages[i].addEventListener('click', () => {
+      otherProductImage = otherProductImages[i].querySelector('.otherProductImage');
+      document.querySelector('.otherProductImages_item.active').classList.remove('active');
+      otherProductImages[i].classList.add('active');
+      productImage.src = otherProductImage.src;
+    });
+  }
+});
