@@ -9,6 +9,9 @@ include("./components/productCard.php");
   <form class = "viewPurchase">
     <section id = "viewProductCard" class = "viewProductCard">
       <div class = "displayProductImage"></div>
+
+      <?php include("components/viewProductImages.php");?>
+      
       <div class = "displayProductSetting">
         <h1>Fantasia para Gatos de Unicórnio e Leão</h1>
       </div>
