@@ -675,7 +675,7 @@ footer {
 }
 
 .deliveryPolicies {
-  width: 65%;
+  width: 100%;
   background-color: #FFF;
   border-width: 0;
   border-radius: 20px;
@@ -688,7 +688,6 @@ footer {
 }
 
 .deliveryPolicies header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 1.5em;
@@ -725,7 +724,7 @@ footer {
 .viewProductInfo {
   width: 100%;
   display: flex;
-  column-gap: 20px;
+  justify-content: space-between;
 }
 
 .viewProductInfo span {
@@ -735,7 +734,6 @@ footer {
 }
 
 .viewProductInfo li {
-  width: 15%;
   list-style: none;
   background-color: #FFF;
   padding-block: .625em;
@@ -744,10 +742,95 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 10px;
+  padding-block: 15px;
+  padding-inline: 25px;
 }
 
 #doginsPolicies {
+  width: 65%;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+
+#groupOfProducts {
+  width: 1145px;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-block: 30px;
+}
+
+#groupOfProducts button {
+  background-color: var(--bgComponents);
+  border-width: 0;
+  border-radius: 15px;
+  padding-block: 12px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-inline: 50px;
+}
+
+.frequentProducts {
+  display: flex;
+  column-gap: 30px;
+}
+
+.textPrice p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.textPrice h1 {
+  font-size: 24px;
+}
+
+.buyFrequently {
+  color: #4B8CEF;
+}
+
+.displayOfProducts {
+  display: flex;
+  column-gap: 50px;
+  margin-inline: 50px;
+}
+
+.infoIcon,
+.specificIcon,
+.ratingsIcon,
+.questionsIcon {
+  display: block;
+  background-size: cover;
+  width: 2.188em;
+  height: 2.188em;
+}
+
+.infoIcon {
+  background: transparent url(../imgs/icon/infomations.svg) no-repeat center;
+}
+
+.specificIcon {
+  background: transparent url(../imgs/icon/especificIcon.svg) no-repeat center;
+}
+
+.ratingsIcon {
+  background: transparent url(../imgs/icon/ratings.svg) no-repeat center;
+}
+
+.questionsIcon {
+  background: transparent url(../imgs/icon/questions.svg) no-repeat center;
+}
+
+.toggleSection {
+  background-color: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
