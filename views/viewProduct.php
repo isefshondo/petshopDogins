@@ -3,6 +3,7 @@ include("./blades/header.php");
 include("./partials/header.php");
 include("./components/sectionHeader.php");
 include("./components/productCard.php");
+include("./components/viewProductImages.php");
 ?>
 <main>
   <?php include("./components/couponNotice.php") ?>
@@ -10,7 +11,7 @@ include("./components/productCard.php");
     <section id = "viewProductCard" class = "viewProductCard">
       <div class = "displayProductImage"></div>
 
-      <?php include("components/viewProductImages.php");?>
+      <?php createProductImageViewer(); ?>
       
       <div class = "displayProductSetting">
         <h1>Fantasia para Gatos de Unicórnio e Leão</h1>
