@@ -788,7 +788,7 @@ footer {
 
 .infoIcon, .specificIcon,
 .ratingsIcon, .questionsIcon,
-.bottom-arrow {
+.bottomArrow {
   display: block;
   width: 2.188em;
   height: 2.188em;
@@ -811,12 +811,12 @@ footer {
   background: url(../imgs/icon/questions.svg) no-repeat center;
 }
 
-.bottom-arrow {
+.bottomArrow {
   background: url(../imgs/icon/bottom-arrow.svg) no-repeat center;
   border: none;
 }
 
-.toggleSection {
+.sectionToggle {
   background-color: #FFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -827,7 +827,7 @@ footer {
   color: var(--detailsText);
 }
 
-.toggleSection header {
+.sectionToggle header {
   display: flex;
   justify-content: space-between;
 }

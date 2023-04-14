@@ -4,6 +4,7 @@ include("./partials/header.php");
 include("./components/sectionHeader.php");
 include("./components/productCard.php");
 include("./components/viewProductImages.php");
+include("./components/productInformation.php");
 ?>
 <main>
   <?php include("./components/couponNotice.php") ?>
@@ -105,56 +106,12 @@ include("./components/viewProductImages.php");
         <button>Adicionar selecionado (s)</button>
       </section>
       <span></span>
-      <section id = "information" class = "toggleSection">
-        <header>
-          <div class = "alignIconText">
-            <span class = "infoIcon"></span>
-            Informações
-          </div>
-          <button type = "button" id="buttonToggle" class="bottom-arrow">
-          </button>
-        </header>
-        <div class = "productInfoDetails">
-          <h1>Fantasia de Unicórnio Cansei de Ser Gato</h1>
-          <p>
-            Um resumão.
-          </p>
-        </div>
-      </section>
-      <span></span>
-      <section id = "information" class = "toggleSection">
-        <header>
-          <div class = "alignIconText">
-            <span class = "infoIcon"></span>
-            Especificações
-          </div>
-          <button type = "button" id="buttonToggle" class="bottom-arrow">
-          </button>
-        </header>
-        <div class = "productInfoDetails">
-          <h1>Fantasia de um cachorro dinossauro</h1>
-          <p>
-            Um resumão.
-          </p>
-        </div>
-      </section>
-      <span></span>
-      <section id = "information" class = "toggleSection">
-        <header>
-          <div class = "alignIconText">
-            <span class = "infoIcon"></span>
-            Informações
-          </div>
-          <button type = "button" id="buttonToggle" class="bottom-arrow">
-          </button>
-        </header>
-        <div class = "productInfoDetails">
-          <h1>Fantasia de Unicórnio Cansei de Ser Gato</h1>
-          <p>
-            Um resumão.
-          </p>
-        </div>
-      </section>
+      <?php
+      createProdInfo("sectionInformations", "Informações");
+      createProdInfo("sectionRatings", "Avaliações");
+      createProdInfo("sectionQuestions", "Informações");
+      createProdInfo("sectionInformations", "Informações");
+      ?>
     </div>
   </section>
 </main>
