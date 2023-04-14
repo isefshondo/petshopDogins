@@ -1,16 +1,19 @@
 @media (max-width: 1910px) {
   a, input[type = "search"]::placeholder,
   .btnSeller, .btnLoginSignin, .navCategory ul li,
-  .productDesc h3, .chooseBuyFrequently p {
+  .productDesc h3, .chooseBuyFrequently p,
+  .disclaimerProductWrapper {
     font-size: 1em;
   }
 
   .discountAlert, .productDesc h2,
-  .notFoundAlert p, .btnBuyFrequently {
+  .notFoundAlert p, .btnBuyFrequently,
+  .deliveryPolicies header, .deliveryPolicies header button{
     font-size: 1.125em;
   }
 
-  .sectionProductsTitle h1 {
+  .sectionProductsTitle h1,
+  .disclaimerPolicies {
     font-size: 1.375em;
   }
 

@@ -905,3 +905,21 @@ footer {
 .productInfoDetails {
   display: none;
 }
+
+.viewSimilarProducts {
+  width: 100%;
+  display: flex;
+  column-gap: 1.563em;
+  padding-block: 2.5em;
+  padding-inline: 3.75em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.sectionOfInformations {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  column-gap: 1.875em;
+  row-gap: 2em;
+  padding-block-end: 6.25em;
+}

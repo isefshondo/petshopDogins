@@ -46,7 +46,7 @@ include("./components/productInformation.php");
         </div>
       </section>
     </form>
-    <div style = "display: grid; grid-template-columns: 3.5fr 1fr; column-gap: 1.875em; row-gap: 2em;">
+    <div class="sectionOfInformations">
       <section id = "doginsPolicies">
         <form class = "deliveryPolicies">
           <header>
@@ -106,7 +106,7 @@ include("./components/productInformation.php");
         <button>Adicionar selecionado (s)</button>
       </section>
       <span></span>
-      <!-- <section id = "viewSimilarProducts">
+      <section id = "viewSimilarProducts">
         <?php
         createHeaderSection("Outros clientes também viram:", true);
         ?>
@@ -114,14 +114,10 @@ include("./components/productInformation.php");
         <?php
         createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
         createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
-        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
-        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
-        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
-        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
         ?>
         </ul>
       </section>
-      <span></span> -->
+      <span></span>
       <?php
       // Os dois primeiros parâmetros são fixos.
       createProdInfo("sectionInformations", "Informações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
