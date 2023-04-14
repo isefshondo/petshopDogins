@@ -42,7 +42,23 @@ include("./components/productCard.php");
     <ul class="categories">
       <li>
         <img src="./assets/imgs/accessories.svg" alt="Acessorios">
-        <h1>Nome da categoria</h1>
+        <h1>Acessórios</h1>
+      </li>
+      <li>
+        <img src="./assets/imgs/accessories.svg" alt="Acessorios">
+        <h1>Alimentação</h1>
+      </li>
+      <li>
+        <img src="./assets/imgs/accessories.svg" alt="Acessorios">
+        <h1>Brinquedos</h1>
+      </li>
+      <li>
+        <img src="./assets/imgs/accessories.svg" alt="Acessorios">
+        <h1>Medicamentos</h1>
+      </li>
+      <li>
+        <img src="./assets/imgs/accessories.svg" alt="Acessorios">
+        <h1>Higiene e Limpeza</h1>
       </li>
     </ul>
   </section>

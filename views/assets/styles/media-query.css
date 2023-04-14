@@ -18,6 +18,24 @@
     font-size: 1.875em;
   }
 
+  .dog-category, .cat-category,
+  .others-category, .puppies-category {
+    font-size: 2.5em;
+  }
+
+  .dog-category {
+    padding-inline-end: 32px;
+  }
+
+  .cat-category {
+    padding-block-end: 32px;
+    padding-inline-start: 32px;
+  }
+
+  .puppies-category {
+    padding: 32px;
+  }
+
   .viewPriceCard {
     row-gap: 2.125em;
   }
