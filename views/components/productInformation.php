@@ -1,5 +1,5 @@
 <?php
-function createProdInfo ($sectionId, $sectionName) {
+function createProdInfo ($sectionId, $sectionName, $productName, $description) {
   $className = "";
   $iconsSection = array(
     array(
@@ -26,7 +26,7 @@ function createProdInfo ($sectionId, $sectionName) {
     }
   }
 
-  echo "<section id=".$sectionId." class='sectionToggle' >".
+  echo "<section id=".$sectionId." class='sectionToggle'>".
     "<header id='sectionToggle'>".
     "<div class='alignIconText'>".
     "<span class='".$className."'></span>".
@@ -35,8 +35,8 @@ function createProdInfo ($sectionId, $sectionName) {
     "<span class='bottomArrow'></span>".
     "</header>".
     "<div class='productInfoDetails'>".
-    "<h1>O nome do produto</h1>".
-    "<p>Um texto gigante</p>".
+    "<h1>".$productName."</h1>".
+    "<p>".$description."</p>".
     "</div>".
     "</section>".
     "<span></span>";

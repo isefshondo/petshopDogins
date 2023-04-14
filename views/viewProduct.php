@@ -107,10 +107,11 @@ include("./components/productInformation.php");
       </section>
       <span></span>
       <?php
-      createProdInfo("sectionInformations", "Informações");
-      createProdInfo("sectionRatings", "Avaliações");
-      createProdInfo("sectionQuestions", "Perguntas");
-      createProdInfo("sectionSpecifics", "Especificações");
+      // Os dois primeiros parâmetros são fixos.
+      createProdInfo("sectionInformations", "Informações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
+      createProdInfo("sectionRatings", "Avaliações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
+      createProdInfo("sectionQuestions", "Perguntas", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
+      createProdInfo("sectionSpecifics", "Especificações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
       ?>
     </div>
   </section>
