@@ -106,6 +106,22 @@ include("./components/productInformation.php");
         <button>Adicionar selecionado (s)</button>
       </section>
       <span></span>
+      <!-- <section id = "viewSimilarProducts">
+        <?php
+        createHeaderSection("Outros clientes também viram:", true);
+        ?>
+        <ul class = "viewSimilarProducts">
+        <?php
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+        ?>
+        </ul>
+      </section>
+      <span></span> -->
       <?php
       // Os dois primeiros parâmetros são fixos.
       createProdInfo("sectionInformations", "Informações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");

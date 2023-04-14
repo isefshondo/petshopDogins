@@ -1,0 +1,24 @@
+@media (max-width: 1910px) {
+  a, input[type = "search"]::placeholder,
+  .btnSeller, .btnLoginSignin, .navCategory ul li,
+  .productDesc h3, .chooseBuyFrequently p {
+    font-size: 1em;
+  }
+
+  .discountAlert, .productDesc h2,
+  .notFoundAlert p, .btnBuyFrequently {
+    font-size: 1.125em;
+  }
+
+  .sectionProductsTitle h1 {
+    font-size: 1.375em;
+  }
+
+  .notFoundAlert h1 {
+    font-size: 1.875em;
+  }
+
+  .viewPriceCard {
+    row-gap: 2.125em;
+  }
+}

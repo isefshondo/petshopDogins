@@ -36,6 +36,7 @@ a {
 
 main {
   background: rgba(247, 247, 247, 0.68);
+  overflow-x: hidden;
 }
 
 .searchForm {
@@ -305,8 +306,7 @@ footer {
   transform: rotate(180deg);
 }
 
-.productsWrapper,
-.secondProductsWrapper {
+.productsWrapper {
   width: calc(100vw - 3.75em);
   display: flex;
   column-gap: 1.563em;
