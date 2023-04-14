@@ -11,7 +11,7 @@ include("./components/productCard.php");
       <h1>Desculpe, ainda estamos trabalhando nesta página!</h1>
       <p>Aproveite para voltar à página inicial e comprar mais produtos AUUdaciosos!</p>
       <div>
-        <button>Voltar</button>
+        <button onclick="location.href='./'">Voltar</button>
       </div>
     </article>
     <figure>
