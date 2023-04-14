@@ -335,6 +335,7 @@ footer {
   color: var(--detailsText);
   padding-block: 38px;
   padding-inline: 36px;
+  position: relative;
 }
 
 .productImg {
@@ -922,4 +923,23 @@ footer {
   column-gap: 1.875em;
   row-gap: 2em;
   padding-block-end: 6.25em;
+}
+
+.selectTheProduct {
+  display: flex;
+  justify-self: right;
+  width: 3.125em;
+  height: 3.125em;
+  appearance: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 1.25em;
+  position: absolute;
+  z-index: 1;
+}
+
+.selectTheProduct:checked {
+  background: var(--bgComponents) url(../imgs/checkIcon.svg) no-repeat center;
+  background-size: 29px;
+  border-color: var(--bgComponents);
 }

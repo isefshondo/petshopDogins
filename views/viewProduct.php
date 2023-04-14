@@ -62,19 +62,19 @@ include("./components/productInformation.php");
           </p>
         </form>
         <ul class = "viewProductInfo">
-          <a href="#"><li>
+          <a href="#sectionInformations"><li>
             <span class = "infoIcon"></span>
             Informações
           </li></a>
-          <a href="#"><li>
+          <a href="#sectionSpecifics"><li>
             <span class = "specificIcon"></span>
             Especificações
           </li></a>
-          <a href="#"><li>
+          <a href="#sectionRatings"><li>
             <span class = "ratingsIcon"></span>
             Avaliações
           </li></a>
-          <a href="#"><li>
+          <a href="#sectionQuestions"><li>
             <span class = "questionsIcon"></span>
             Perguntas
           </li></a>
@@ -88,8 +88,8 @@ include("./components/productInformation.php");
         <section class = "displayOfProducts">
           <div class = "frequentProducts">
             <?php
-            createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
-            createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+            createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90", true);
+            createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90", true);
             ?>
           </div>
           <div class = "textPrice">
@@ -121,8 +121,8 @@ include("./components/productInformation.php");
       <?php
       // Os dois primeiros parâmetros são fixos.
       createProdInfo("sectionInformations", "Informações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
-      createProdInfo("sectionRatings", "Avaliações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
-      createProdInfo("sectionQuestions", "Perguntas", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
+      createProdInfo("sectionRatings", "Avaliações", "Seja o primeiro a avaliar!", "");
+      createProdInfo("sectionQuestions", "Perguntas", "Não há perguntas para este produto... Seja o primeiro a perguntar!", "");
       createProdInfo("sectionSpecifics", "Especificações", "Um novo produto adicionado", "Uma nova descrição para um novo produto adicionacinado");
       ?>
     </div>

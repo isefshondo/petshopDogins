@@ -1,5 +1,10 @@
 <?php
-function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPrice) {
+function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPrice, $boughtFrequently = false) {
+  if ($boughtFrequently) {
+    echo
+    "<div style='display: grid;'>".
+    "<input type='checkbox' class='selectTheProduct'/>";
+  }
   echo 
   "<li class='productCard'>".
     "<figure class='productImg'>".
@@ -14,5 +19,8 @@ function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPr
       "<h2>R&#36; ".$newPrice."</h2>".
     "</hgroup>".
   "</li>";
+  if ($boughtFrequently) {
+    echo "</div>";
+  }
 }
 ?>
