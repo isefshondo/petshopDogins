@@ -109,8 +109,8 @@ include("./components/productInformation.php");
       <?php
       createProdInfo("sectionInformations", "Informações");
       createProdInfo("sectionRatings", "Avaliações");
-      createProdInfo("sectionQuestions", "Informações");
-      createProdInfo("sectionInformations", "Informações");
+      createProdInfo("sectionQuestions", "Perguntas");
+      createProdInfo("sectionSpecifics", "Especificações");
       ?>
     </div>
   </section>

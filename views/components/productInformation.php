@@ -27,12 +27,12 @@ function createProdInfo ($sectionId, $sectionName) {
   }
 
   echo "<section id=".$sectionId." class='sectionToggle' >".
-    "<header>".
+    "<header id='sectionToggle'>".
     "<div class='alignIconText'>".
     "<span class='".$className."'></span>".
     $sectionName.
     "</div>".
-    "<button id='buttonToggle' class='bottomArrow'></button>".
+    "<span class='bottomArrow'></span>".
     "</header>".
     "<div class='productInfoDetails'>".
     "<h1>O nome do produto</h1>".

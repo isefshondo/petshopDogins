@@ -1,39 +1,22 @@
-const productsWrapperP1 = [...document.querySelectorAll('.productsWrapper')];
-const productsWrapperP2 = [...document.querySelectorAll('.secondProductsWrapper')];
+const productsWrapper = [...document.querySelectorAll('.productsWrapper')];
+
 const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
+
 const mainCarousel = document.querySelector('.imgs-slider');
-const buttonToggleInfo = [...document.querySelectorAll('#buttonToggle')];
+let currentImgIndex = 0;
+
+const sectionToggleInfo = [...document.querySelectorAll('#sectionToggle')];
 const productTextDetails = [...document.querySelectorAll('.productInfoDetails')];
-console.log(buttonToggleInfo, productTextDetails)
 
 const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
 const productImage = document.getElementById('productImage');
 
-let currentImgIndex = 0;
-
 let purchaseFrequently = document.getElementById('purchaseFrequently');
 let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequentlyInfo')[0];
 
-productsWrapperP1.forEach((item, i) => {
-  const previousButton = [...document.querySelectorAll('.btnPrevFirstProducts')];
-  const nextButton = [...document.querySelectorAll('.btnNextFirstProducts')];
-  // TODO: Maybe change the size of the scroll
-  let wrapperDimensions = item.getBoundingClientRect();
-  let wrapperWidth = wrapperDimensions.width;
-
-  previousButton[i].addEventListener('click', () => {
-    item.scrollLeft -= wrapperWidth;
-  });
-
-  nextButton[i].addEventListener('click', () => {
-    item.scrollLeft += wrapperWidth;
-  });
-});
-
-productsWrapperP2.forEach((item, i) => {
-  const previousButton = [...document.querySelectorAll('.btnPrevSecondProducts')];
-  const nextButton = [...document.querySelectorAll('.btnNextSecondProducts')];
-  // TODO: Maybe change the size of the scroll
+productsWrapper.forEach((item, i) => {
+  const previousButton = [...document.querySelectorAll('.leftButton')];
+  const nextButton = [...document.querySelectorAll('.rightButton')];
   let wrapperDimensions = item.getBoundingClientRect();
   let wrapperWidth = wrapperDimensions.width;
 
@@ -80,8 +63,8 @@ otherProductImages.forEach((item, i) => {
   }
 });
 
-buttonToggleInfo.forEach((item, i) => {
-  buttonToggleInfo[i].addEventListener('click', () => {
+sectionToggleInfo.forEach((item, i) => {
+  sectionToggleInfo[i].addEventListener('click', () => {
     let styleDisplay = productTextDetails[i].style.display;
     !styleDisplay ? productTextDetails[i].style.display = "block" : productTextDetails[i].style.display = "";
   })

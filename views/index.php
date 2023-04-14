@@ -27,7 +27,7 @@ include("./components/productCard.php");
   </section>
   <section id="firstShowProducts">
     <?php
-    createHeaderSection("Produtos AUUdaciosos", true, "FirstProducts");
+    createHeaderSection("Produtos AUUdaciosos", true);
     ?>
     <ul class="productsWrapper">
       <?php
@@ -48,11 +48,11 @@ include("./components/productCard.php");
   </section>
   <section id="secondShowProducts">
     <?php
-    createHeaderSection("Produtos AUUdaciosos", true, "SecondProducts");
+    createHeaderSection("Produtos AUUdaciosos", true);
     ?>
-    <ul class="secondProductsWrapper">
+    <ul class="productsWrapper">
       <?php
-        createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       ?>
     </ul>
   </section>
@@ -86,6 +86,21 @@ include("./components/productCard.php");
     <ul class="brandsHolder">
       <li>
         <img src="./assets/imgs/brands/whiskas.png" alt="Nossa parceria com o Whiskas!">
+      </li>
+      <li>
+        <img src="./assets/imgs/brands/pedigree.png" alt="Nossa parceria com a Pedigree!">
+      </li>
+      <li>
+        <img src="./assets/imgs/brands/purina.png" alt="Nossa parceria com a Purina!">
+      </li>
+      <li>
+        <img src="./assets/imgs/brands/royal-canin.png" alt="Nossa parceria com a Royal Canin!">
+      </li>
+      <li>
+        <img src="./assets/imgs/brands/gran-plus.png" alt="Nossa parceria com a Gran Plus!">
+      </li>
+      <li>
+        <img src="./assets/imgs/brands/nexgard.png" alt="Nossa parceria com o Nexgard!">
       </li>
     </ul>
   </section>
