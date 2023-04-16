@@ -1,0 +1,376 @@
+[{
+  "_id": {
+    "$oid": "6435eec8f8ac63da19379254"
+  },
+  "categoria_produto": "acessorio",
+  "cod_produto": "432198765",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para gatos;\nSeu gato também cansou de ser gato? Ele pode virar um unicórnio!\nO fecho é de velcro, ajustável à cabeça do seu gato;\nÉ super leve e confortável;\nFeita de algodão;\nDisponível em embalagem com 1 unidade.",
+  "imagens_produto": "../../views/assets/imgs/products/fantasiaunicornio.jpg",
+  "marca_anuncio": "Cansei de Ser Gato",
+  "peso_produto": "250",
+  "preco_produto": "39,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Fantasia de Unicórnio Cansei de Ser Gato"
+},{
+  "_id": {
+    "$oid": "6435f268f8ac63da19379255"
+  },
+  "categoria_produto": "acessorio",
+  "cod_produto": "987654321",
+  "cor_produto": "laranja",
+  "descricao_anuncio": "Indicada para cães e gatos;\nProduto original, licenciado e exclusivo Piticas;\nCostura reforçada;\nResistente;\nConfortável e segura;\nProduto lavável;\nDisponível nos tamanhos P, M, G e GG.",
+  "imagens_produto": "../../views/assets/imgs/products/fantasiadragonball.jpg",
+  "marca_anuncio": "Cansei de Ser Gato",
+  "peso_produto": "250",
+  "preco_produto": "59,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Camiseta Piticas Dragon Ball Goku para Cães"
+},{
+  "_id": {
+    "$oid": "6435f3cbf8ac63da19379256"
+  },
+  "categoria_produto": "acessorio",
+  "cod_produto": "198765432",
+  "cor_produto": "cinza",
+  "descricao_anuncio": "Indicada para cães e gatos;\nProduto original, licenciado e exclusivo Piticas;\nCostura reforçada;\nResistente;\nConfortável;\nDisponível nos tamanhos 0, 1, 2, 3, 4 ,5 e 6",
+  "imagens_produto": "../../views/assets/imgs/products/capadechuva.jpg",
+  "marca_anuncio": "Basic Griff Dog",
+  "peso_produto": "250",
+  "preco_produto": "59,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Capa de Chuva Basic Griff Dog para Cães"
+},{
+  "_id": {
+    "$oid": "6435f512f8ac63da19379257"
+  },
+  "categoria_produto": "acessorio",
+  "cod_produto": "129876543",
+  "cor_produto": "vermelho",
+  "descricao_anuncio": "Indicada para cães e gatos;\nProduto original, licenciado e exclusivo Piticas;\nCostura reforçada;\nTecido confortável;\nDisponível nos tamanhos 0, 1, 2, 3, 4 ,5 e 6",
+  "imagens_produto": "../../views/assets/imgs/products/bandanahomemdeferro.jpg",
+  "marca_anuncio": "Piticas",
+  "peso_produto": "250",
+  "preco_produto": "29,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Bandana Piticas Homem de Ferro"
+},{
+  "_id": {
+    "$oid": "6435f5d3f8ac63da19379258"
+  },
+  "categoria_produto": "acessorio",
+  "cod_produto": "123987654",
+  "cor_produto": "vermelho",
+  "descricao_anuncio": "Indicada para cães e gatos;\nJuba ajustável com fecho de velcro\nCostura reforçada;\nTecido confortável;",
+  "imagens_produto": "../../views/assets/imgs/products/fantasiadeleao.jpg",
+  "marca_anuncio": "Cansei de Ser Gato",
+  "peso_produto": "250",
+  "preco_produto": "49,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Fantasia Juba de Leão Cansei de Ser Gato"
+},{
+  "_id": {
+    "$oid": "64372a207f7b43ab29138186"
+  },
+  "categoria_produto": "brinquedos",
+  "cod_produto": "123498765",
+  "cor_produto": "verde",
+  "descricao_anuncio": "Indicada para cães e gatos;\nCostura reforçada;",
+  "imagens_produto": "../../views/assets/imgs/products/jacarepelucia.webp",
+  "marca_anuncio": "Chalesco",
+  "peso_produto": "550",
+  "preco_produto": "39,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Pelúcia Chalesco Crocodilo"
+},{
+  "_id": {
+    "$oid": "64372a977f7b43ab29138187"
+  },
+  "categoria_produto": "brinquedos",
+  "cod_produto": "123459876",
+  "cor_produto": "amarelo",
+  "descricao_anuncio": "Indicada para cães e gatos;\nCostura reforçada;",
+  "imagens_produto": "../../views/assets/imgs/products/patopelucia.webp",
+  "marca_anuncio": "Jambo",
+  "peso_produto": "550",
+  "preco_produto": "39,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Brinquedo Jambo Pelúcia Big Duck para Cães"
+},{
+  "_id": {
+    "$oid": "64372b4b7f7b43ab29138188"
+  },
+  "categoria_produto": "brinquedos",
+  "cod_produto": "123456987",
+  "cor_produto": "marrom",
+  "descricao_anuncio": "Indicada para cães e gatos;\nCostura reforçada;",
+  "imagens_produto": "../../views/assets/imgs/products/tatupelucia.png",
+  "marca_anuncio": "Chalesco",
+  "peso_produto": "550",
+  "preco_produto": "39,90",
+  "quantidade_produto": "15",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Brinquedo de Pelúcia Chalesco Tatu"
+},{
+  "_id": {
+    "$oid": "64372be07f7b43ab29138189"
+  },
+  "categoria_produto": "brinquedos",
+  "cod_produto": "123456798",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para gatos;\nContém 03 unidades;\nMaterial reforçado;",
+  "imagens_produto": "../../views/assets/imgs/products/degraus.png",
+  "marca_anuncio": "Hello Pet",
+  "peso_produto": "550",
+  "preco_produto": "49,90",
+  "quantidade_produto": "10",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Kit Degraus Hello Pet MDF Azul com 3 Peças para Gatos"
+},{
+  "_id": {
+    "$oid": "64372cf97f7b43ab2913818a"
+  },
+  "categoria_produto": "brinquedos",
+  "cod_produto": "1923456798",
+  "cor_produto": "rosa",
+  "descricao_anuncio": "Indicada para gatos;\nContém 03 unidades;\nMaterial reforçado;",
+  "imagens_produto": "../../views/assets/imgs/products/keekee.png",
+  "marca_anuncio": "Paws Buddy KeeKee",
+  "peso_produto": "550",
+  "preco_produto": "49,90",
+  "quantidade_produto": "10",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Brinquedo All For Paws Buddy KeeKee Bird para Cães - Rosa"
+},{
+  "_id": {
+    "$oid": "643731067f7b43ab2913818b"
+  },
+  "categoria_produto": "higiene",
+  "cod_produto": "1293456798",
+  "cor_produto": "roxo",
+  "descricao_anuncio": "Indicada para cães;\nContém 03 unidades;\nPode ser utilizado em filhotes;",
+  "imagens_produto": "../../views/assets/imgs/products/kitbanho.webp",
+  "marca_anuncio": "Pet Clean",
+  "peso_produto": "550",
+  "preco_produto": "69,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Kit Banho A Seco Para Cães + Limpa Carinha E Hidra."
+},{
+  "_id": {
+    "$oid": "6437317a7f7b43ab2913818c"
+  },
+  "categoria_produto": "higiene",
+  "cod_produto": "1239456798",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães;\nContém 03 unidades;\nPode ser utilizado em filhotes;",
+  "imagens_produto": "../../views/assets/imgs/products/tapete.webp",
+  "marca_anuncio": "Papum",
+  "peso_produto": "550",
+  "preco_produto": "49,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Tapete Higiênico Papum para Cães de Pequeno"
+},{
+  "_id": {
+    "$oid": "643731f07f7b43ab2913818d"
+  },
+  "categoria_produto": "higiene",
+  "cod_produto": "1234956798",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães;\nContém 01 unidade;\nPode ser utilizado em filhotes;",
+  "imagens_produto": "../../views/assets/imgs/products/hidratante.webp",
+  "marca_anuncio": "Soft Care",
+  "peso_produto": "240",
+  "preco_produto": "103,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Hidratante Soft Care Spray Hydra T 240ML"
+},{
+  "_id": {
+    "$oid": "643732717f7b43ab2913818e"
+  },
+  "categoria_produto": "higiene",
+  "cod_produto": "1234956798",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães;\nContém 01 unidade;\nPode ser utilizado em filhotes;",
+  "imagens_produto": "../../views/assets/imgs/products/hidratantepatinhas.webp",
+  "marca_anuncio": "Soft Care",
+  "peso_produto": "150",
+  "preco_produto": "33,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Hidratante de Patinhas Pet Clean para Cães"
+},{
+  "_id": {
+    "$oid": "643733c57f7b43ab2913818f"
+  },
+  "categoria_produto": "higiene",
+  "cod_produto": "1234596798",
+  "cor_produto": "vermelho",
+  "descricao_anuncio": "Indicada para cães;\nContém 01 unidade;\nPode ser utilizado em filhotes;",
+  "imagens_produto": "../../views/assets/imgs/products/perfume.webp",
+  "marca_anuncio": "Beeps",
+  "peso_produto": "150",
+  "preco_produto": "24,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Colônia Pet Society Beeps Melancia"
+},{
+  "_id": {
+    "$oid": "643734c97f7b43ab29138190"
+  },
+  "categoria_produto": "medicamentos",
+  "cod_produto": "1234569798",
+  "cor_produto": "vermelho",
+  "descricao_anuncio": "Indicada para cães e gatos;\nContém 30 comprimidos;\nSuplemento Vitaminico Mineral;",
+  "imagens_produto": "../../views/assets/imgs/products/hemolitan.png",
+  "marca_anuncio": "Beeps",
+  "peso_produto": "150",
+  "preco_produto": "54,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Hemolitan Pet"
+},{
+  "_id": {
+    "$oid": "6437355c7f7b43ab29138191"
+  },
+  "categoria_produto": "medicamentos",
+  "cod_produto": "1234567998",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães e gatos;\nContém 125ml;\nSuplemento Vitaminico Mineral;",
+  "imagens_produto": "../../views/assets/imgs/products/glicopan.png",
+  "marca_anuncio": "VetNil",
+  "peso_produto": "125",
+  "preco_produto": "54,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Glicopan Pet"
+},{
+  "_id": {
+    "$oid": "6437359a7f7b43ab29138192"
+  },
+  "categoria_produto": "medicamentos",
+  "cod_produto": "1234567998",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães e gatos;\nContém 30ml;\nSuplemento Vitaminico Mineral;",
+  "imagens_produto": "../../views/assets/imgs/products/glicopangold.png",
+  "marca_anuncio": "VetNil",
+  "peso_produto": "30",
+  "preco_produto": "54,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Glicopan Gold"
+},{
+  "_id": {
+    "$oid": "643736b67f7b43ab29138193"
+  },
+  "categoria_produto": "medicamentos",
+  "cod_produto": "1234567991",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães e gatos;\nContém 60 comprimidos;\nSuplemento Vitaminico Mineral;",
+  "imagens_produto": "../../views/assets/imgs/products/condrotec.png",
+  "marca_anuncio": "Syntec",
+  "peso_produto": "60",
+  "preco_produto": "54,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Condrotec Pet"
+},{
+  "_id": {
+    "$oid": "643738b27f7b43ab29138194"
+  },
+  "categoria_produto": "medicamentos",
+  "cod_produto": "1234567991",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães e gatos;\nContém 30 comprimidos;\nSuplemento Vitaminico Mineral;",
+  "imagens_produto": "../../views/assets/imgs/products/condrotec.png",
+  "marca_anuncio": "Botupharma",
+  "peso_produto": "215",
+  "preco_produto": "34,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Epoclean Dog"
+},{
+  "_id": {
+    "$oid": "64373de97f7b43ab29138195"
+  },
+  "categoria_produto": "racao",
+  "cod_produto": "1992345671",
+  "cor_produto": "laranja",
+  "descricao_anuncio": "Indicada para cães;\nContém 1kg;\nFonte de vitaminas e minerais",
+  "imagens_produto": "../../views/assets/imgs/products/golden.webp",
+  "marca_anuncio": "Golden",
+  "peso_produto": "1000",
+  "preco_produto": "19,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Golden Formula"
+},{
+  "_id": {
+    "$oid": "64373eb17f7b43ab29138196"
+  },
+  "categoria_produto": "racao",
+  "cod_produto": "1234567889",
+  "cor_produto": "azul",
+  "descricao_anuncio": "Indicada para cães;\nContém 1kg;\nFonte de Vitaminas e Minerais;",
+  "imagens_produto": "../../views/assets/imgs/products/origens.webp",
+  "marca_anuncio": "Origens",
+  "peso_produto": "1000",
+  "preco_produto": "24,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Origens"
+},{
+  "_id": {
+    "$oid": "643740067f7b43ab29138197"
+  },
+  "categoria_produto": "racao",
+  "cod_produto": "1234567789",
+  "cor_produto": "branco",
+  "descricao_anuncio": "Indicada para cães;\nContém 1kg;\nFonte de Vitaminas e Minerais;",
+  "imagens_produto": "../../views/assets/imgs/products/royal.webp",
+  "marca_anuncio": "Royal Canin",
+  "peso_produto": "1000",
+  "preco_produto": "34,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Royal Canin"
+},{
+  "_id": {
+    "$oid": "643740457f7b43ab29138198"
+  },
+  "categoria_produto": "racao",
+  "cod_produto": "1234556789",
+  "cor_produto": "vermelho",
+  "descricao_anuncio": "Indicada para cães;\nContém 1kg;\nFonte de Vitaminas e Minerais;",
+  "imagens_produto": "../../views/assets/imgs/products/gran.webp",
+  "marca_anuncio": "Gran Plus",
+  "peso_produto": "1000",
+  "preco_produto": "34,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Gran Plus"
+},{
+  "_id": {
+    "$oid": "643740c07f7b43ab29138199"
+  },
+  "categoria_produto": "racao",
+  "cod_produto": "1234456789",
+  "cor_produto": "amarelo",
+  "descricao_anuncio": "Indicada para cães;\nContém 1kg;\nFonte de Vitaminas e Minerais;",
+  "imagens_produto": "../../views/assets/imgs/products/premier.jpg",
+  "marca_anuncio": "Premier Nattu",
+  "peso_produto": "1000",
+  "preco_produto": "29,90",
+  "quantidade_produto": "20",
+  "tamanhos": "Unico",
+  "titulo_anuncio": "Premier Nattu"
+}]

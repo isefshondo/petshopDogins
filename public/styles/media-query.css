@@ -1,0 +1,45 @@
+@media (max-width: 1910px) {
+  a, input[type = "search"]::placeholder,
+  .btnSeller, .btnLoginSignin, .navCategory ul li,
+  .productDesc h3, .chooseBuyFrequently p,
+  .disclaimerProductWrapper {
+    font-size: 1em;
+  }
+
+  .discountAlert, .productDesc h2,
+  .notFoundAlert p, .btnBuyFrequently,
+  .deliveryPolicies header, .deliveryPolicies header button{
+    font-size: 1.125em;
+  }
+
+  .sectionProductsTitle h1,
+  .disclaimerPolicies {
+    font-size: 1.375em;
+  }
+
+  .notFoundAlert h1 {
+    font-size: 1.875em;
+  }
+
+  .dog-category, .cat-category,
+  .others-category, .puppies-category {
+    font-size: 2.5em;
+  }
+
+  .dog-category {
+    padding-inline-end: 32px;
+  }
+
+  .cat-category {
+    padding-block-end: 32px;
+    padding-inline-start: 32px;
+  }
+
+  .puppies-category {
+    padding: 32px;
+  }
+
+  .viewPriceCard {
+    row-gap: 2.125em;
+  }
+}
