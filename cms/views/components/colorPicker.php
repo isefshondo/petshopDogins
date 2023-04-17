@@ -1,9 +1,16 @@
 <?php
 
-    function createColorPicker(){
+    function createColorPicker($color = '#FF0000', $remove = false){
+        if($remove == false){
+            $class = "d-none";
+        }else{
+            $class = "";
+        }
+
         echo "<div class='color-picker'>".
-                "<input type='color' name='cor_produto' id='cor_produto' value='#FF0000'>".
-                "<p id='selected_color'></p>".
+                "<input type='color' name='productColors[]' value='$color'>".
+                "<p class='selected_color'>$color</p>".
+                "<span class='btnAdd remove $class'>- Remove</span>".
             "</div>";
     }
 ?>

@@ -1,12 +1,18 @@
 <?php
-    function createCategorieOption($categorieName){
-        echo "<label for='$categorieName' class='categoriesOption'>".
-                "<ul>".
-                    "<li>".
-                        "<img class='categorieOptionIcon' src='../../public/imgs/$categorieName.svg' alt='$categorieName'>".
+    function createCategorieOption($categorieOption, $productCategoryChecked){
+        if($categorieOption[1] == $productCategoryChecked){
+            $radio = "checked";
+        }else{
+            $radio = "";
+        }
+        echo "<label for='$categorieOption[0]' class='categoriesOption $radio'>".
+                "<ul class='categories'>".
+                    "<li class='optionRadioWrapper'>".
+                        "<img class='categorieOptionIcon' src='../../public/imgs/$categorieOption[0].svg' alt='$categorieOption[1]'>".
+                        "<h2>$categorieOption[1]</h2>".
                     "</li>".
                 "</ul>".
-                "<input type='radio' id='$categorieName' name='categoria_produto' class='d-none' value='$categorieName'>".
+                "<input type='radio' id='$categorieOption[0]' name='productCategory' class='d-none' value='$categorieOption[1]' $radio>".
              "</label>";
     }
 ?>

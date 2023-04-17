@@ -4,6 +4,8 @@
 
     include("components/categoriesOptions.php");
     include("components/colorPicker.php");
+    include("components/dropImages.php");
+    include("components/selectSizes.php");
 
     $n_part = $_GET['part'] ?? 1;
 
@@ -14,6 +16,8 @@
         foreach($query_string as $key => $value){
             $doc[$key] = $value;            
         }
+        
+        var_dump($doc);
     }
 
     $query_string = base64_encode(http_build_query($doc));

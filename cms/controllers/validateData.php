@@ -16,21 +16,21 @@
             }
         }
 
-        // Verifica se o input de imagens_produto foi enviado
-        if(!empty($_FILES['imagens_produto']['name'][0])){
+        // Verifica se o input de productImages foi enviado
+        if(!empty($_FILES['productImages']['name'][0])){
             // Loop através de cada imagem e a salva em um diretório temporário
-            for($i=0; $i<count($_FILES['imagens_produto']['name']); $i++){
-                $tmpFilePath = $_FILES['imagens_produto']['tmp_name'][$i];
+            for($i=0; $i<count($_FILES['productImages']['name']); $i++){
+                $tmpFilePath = $_FILES['productImages']['tmp_name'][$i];
 
                 // Verifica se o arquivo é realmente uma imagem
                 if (getimagesize($tmpFilePath) !== false) {
                     // Gera um nome de arquivo único para evitar conflitos
-                    $newFilePath = "../../public/imgs/products" . uniqid('', true) . '.' . pathinfo($_FILES['imagens_produto']['name'][$i], PATHINFO_EXTENSION);
+                    $newFilePath = "../../public/imgs/products" . uniqid('', true) . '.' . pathinfo($_FILES['productImages']['name'][$i], PATHINFO_EXTENSION);
 
                     // Move o arquivo temporário para o diretório de destino
                     if (move_uploaded_file($tmpFilePath, $newFilePath)) {
                         // Adiciona o caminho da imagem no array $doc_tmp
-                        $doc_tmp['imagens_produto'][] = $newFilePath;
+                        $doc_tmp['productImages'][] = $newFilePath;
                     }
                 }
             }

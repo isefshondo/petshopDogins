@@ -9,10 +9,11 @@ let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequently
 
 const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
 const productImage = document.getElementById('productImage');
-const btnsAdd = [...document.querySelectorAll('.btnAdd')];
 const productCards = [...document.querySelectorAll('.productCardWrapper')];
 const formFloatingInputs = [...document.querySelectorAll('.form-floating_input > textarea, .form-floating_input > input[type="text"], input[type="number"]')];
 const universalProductCode_checkbox = document.querySelector('.universalProductCode_checkbox');
+const categoriesOptions = [...document.querySelectorAll('.categoriesOption')];
+const productImages = document.querySelector('#productImages');
 
 productsWrapper.forEach((item, i) => {
   const previousButton = [...document.querySelectorAll('.leftButton')];
@@ -71,22 +72,121 @@ otherProductImages.forEach((item, i) => {
   }
 });
 
-/* #limitar quantidade de cliques */
+const btnsAdd = [...document.querySelectorAll('.btnAdd')];
+
 btnsAdd.forEach((item, i) => {
   btnsAdd[i].addEventListener('click', () => {
-    if(btnsAdd[i].contains('color_picker')){
-      document.getElementById('selectProductColors').append(colorPicker());
-    }else if(btnsAdd[i].contains('new_size')){
-      document.getElementById('addSize').append();
+    if(btnsAdd[i].classList.contains('color_picker')){
+      const otherColors = document.getElementById('otherColors');
+      const limit = otherColors.getAttribute('data-limit');
+      if(otherColors.childElementCount < limit-1){
+        otherColors.append(colorPicker());
+        numColors++;
+      }else{
+        alert('Você só pode selecionar até ' + limit + ' cores');
+      }
+    }else if(btnsAdd[i].classList.contains('add-size')){
+      const newSize = document.querySelector('.new-size');
+      btnsAdd[i].classList.add('d-none');
+      newSize.classList.remove('d-none');
+
+      newSize.querySelector('.btnAdd').addEventListener('click', () => {
+        const otherSizes = document.querySelector('.otherSizes');
+        const size = newSize.querySelector('input[type="text"]').value;
+        otherSizes.append(selectSize(size));
+        newSize.querySelector('input[type="text"]').value = '';
+        newSize.classList.add('d-none');
+        btnsAdd[i].classList.remove('d-none');
+      });
     }
-    console.log("color picker");
   });
 });
 
 
+// ColorPicker
+const colorPickers = [...document.querySelectorAll('.color-picker')];
+let btnsRemove = [...document.querySelectorAll('.remove')];
+let numColors = 0;
+let idColorPicker = 0;
+
+
+colorPickers.forEach((item, i) => {
+  colorPickers[i].addEventListener('change', () => {
+    selectedColor = colorPickers[i].querySelector('.selected_color');
+    selectedColor.textContent = colorPickers[i].querySelector('input[type="color"]').value;
+    console.log(colorPickers[i]);
+  });
+});
+
+btnsRemove.forEach((item, i) => {
+  btnsRemove[i].addEventListener('click', (event) => {
+    wrapperRemove(event.target.parentNode);
+    console.log(btnsRemove);
+  });
+});
+
+colorPicker = () => {
+  wrapper = document.createElement('div');
+  inputColor = document.createElement('input');
+  colorName = document.createElement('p');
+  btnRemove = document.createElement('span');
+  wrapper.classList.add('color-picker');
+  colorName.classList.add('selected_color');
+  btnRemove.classList.add('btnAdd');
+  btnRemove.classList.add('remove');
+  btnRemove.textContent = '- Remover';
+  inputColor.type = 'color';
+  inputColor.name = 'productColors[]';
+  inputColor.value = randomColor();
+  colorName.innerText = inputColor.value;
+  wrapper.appendChild(inputColor);
+  wrapper.appendChild(colorName);
+  wrapper.appendChild(btnRemove);
+  idColorPicker++;
+  wrapper.id = idColorPicker;
+
+  
+  btnRemove.addEventListener('click', (event) => {
+    wrapperRemove(event.target.parentNode);
+    console.log(btnsRemove);
+  });
+
+  // Adiciona o novo botão de remoção à lista
+  btnsRemove.push(btnRemove);
+
+  // Atualiza a lista de botões de remoção
+  btnsRemove = [...document.querySelectorAll('.remove')];
+
+  inputColor.addEventListener('change', () => {
+    colorName.innerText = inputColor.value;
+  });
+
+  return wrapper;
+}
+
+function randomColor(){
+  // Gerar 3 números aleatórios entre 0 e 255
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  // Concatenar os valores hexadecimais em uma string
+  const color = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
+
+  return color;
+}
+
+function wrapperRemove(btnParent){
+  wrapperParent = btnParent.parentNode;
+  wrapperParent.removeChild(btnParent);
+  numColors--;
+  
+  btnsRemove = [...document.querySelectorAll('.remove')];
+}
+
 productCards.forEach((item, i) => {
   productCards[i].addEventListener('mouseover', () => { 
-    productCard =  productCards[i].querySelector('.productCardMask');
+    productCard = productCards[i].querySelector('.productCardMask');
     productCard.classList.remove('d-none');
     productCard.classList.add('d-flex');
   });
@@ -111,63 +211,85 @@ formFloatingInputs.forEach((item, i) => {
   });
 });
 
-universalProductCode_checkbox.addEventListener('change', (event) => {
-  const universalProductCode_input = document.querySelector('.universalProductCode_input > input[type="number"]');
+if(universalProductCode_checkbox){
+  universalProductCode_checkbox.addEventListener('change', (event) => {
+    const universalProductCode_input = document.querySelector('.universalProductCode_input > input[type="number"]');
   
-  if(event.target.checked){
-    universalProductCode_input.value = '';
-    universalProductCode_input.disabled = true;
-  }else{
-    universalProductCode_input.disabled = false;
-  }
+    if(event.target.checked){
+      universalProductCode_input.value = '';
+      universalProductCode_input.disabled = true;
+    }else{
+      universalProductCode_input.disabled = false;
+    }
+  });
+}
+
+categoriesOptions.forEach((item, i) => {
+  categoriesOptions[i].addEventListener('click', (event) => {
+    const checkedRadio = document.querySelector('.categoriesOption > input[type="radio"]:checked');
+
+    if(checkedRadio){
+      const otherOption = checkedRadio.closest('.categoriesOption');
+      otherOption.classList.remove('checked');
+    }
+    categoriesOptions[i].classList.add('checked');
+  });
 });
 
+if(productImages){
+  productImages.addEventListener('change', (event) => {
+    const input = event.target;
+    const dropAreaImages = document.getElementById('drop-area_imgs');
+    const limit = productImages.getAttribute('data-limit');
+  
+    dropAreaImages.innerHTML = "";
+  
+    if(input.files.length > limit){
+      alert('Você só pode selecionar até ' + limit + ' imagens');
+      input.value = '';
+    }else{
+      for(let i=0; i<input.files.length; i++){
+          const reader = new FileReader();
+          reader.onload = () => {
+              const imagePreview = document.createElement("img");
+              const figure = document.createElement("figure");
+              const span = document.createElement("span");
+              figure.className = "drop-area_fig";
+              span.className = "closeIcon";
+              span.innerHTML = "<i class='fa-sharp fa-solid fa-circle-xmark'></i>";
+              imagePreview.className = "drop-area_fig-img";
+              imagePreview.src = reader.result;
+              figure.appendChild(imagePreview);
+              figure.appendChild(span);
+              dropAreaImages.appendChild(figure);
 
+              span.addEventListener('click', () => {
+                  dropAreaImages.removeChild(figure);
+              });
+          };
+          reader.readAsDataURL(input.files[i]);
+      }
+    }
+  });
+  
+}
 //FUNCTIONS
 
-previewImages = (event) => {
-  const input = event.target;
-  const dropAreaImages = document.getElementById('drop-area_imgs');
+selectSize = (size) => {
 
-  dropAreaImages.innerHTML = "";
-
-  if (input.files.length > 5) {
-    alert('Você só pode selecionar até 5 imagens');
-    input.value = '';
-  }else{
-    for(let i=0; i<input.files.length; i++){
-        const reader = new FileReader();
-        reader.onload = () => {
-            imagePreview = document.createElement("img");
-            const figure = document.createElement("figure");
-            figure.className = "drop-area_fig";
-            imagePreview.className = "drop-area_fig-img";
-            imagePreview.src = reader.result;
-            figure.appendChild(imagePreview);
-            dropAreaImages.appendChild(figure);
-        };
-        reader.readAsDataURL(input.files[i]);
-    }
+  if((!size || size.trim() === '')){
+    return '';
   }
-}
+  const labelCheckbox = document.createElement('label'); 
+  const inputCheckbox = document.createElement('input');
 
-colorPicker = () => {
-  wrapper = document.createElement('div');
-  inputColor = document.createElement('input');
-  colorName = document.createElement('p');
-  wrapper.classList.add('color-picker');
-  inputColor.type = 'color';
-  inputColor.name = 'cor_produto';
-  inputColor.value = '#FF0000';
-  wrapper.appendChild(inputColor);
+  inputCheckbox.type = 'checkbox';
+  inputCheckbox.name = 'sizes[]';
+  inputCheckbox.value = size;
+  inputCheckbox.checked = true
 
-  return wrapper;
-}
+  labelCheckbox.appendChild(inputCheckbox);
+  labelCheckbox.appendChild(document.createTextNode(` ${size}`));
 
-selectSize = () => {
-  labelCheckbox = document.createElement('label');
-  inputCheckbox = document.createElement('input');
-  
-  inputCheckbox.type = 'checkbox'
-  inputCheckbox.name
+  return labelCheckbox;
 }

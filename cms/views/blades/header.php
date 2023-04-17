@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="../../public/styles/styles.css">
+    <script src="https://kit.fontawesome.com/cf0dfc904b.js" crossorigin="anonymous"></script>
     <title><?php echo $_GET['page'] ?? "Pagina Inicial"; ?></title>
 </head>
 <body>

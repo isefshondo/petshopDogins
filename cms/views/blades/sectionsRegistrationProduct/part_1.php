@@ -4,10 +4,11 @@
         <div class="form-floating_header">
             <h3 class="form-floating_title mb-4">Primeiro, preencha em qual categoria se encaixa</h3>            
         </div>
-        <?php 
-            $categoriesOptions = ['accessories', 'food', 'toys', 'medicines', 'hygiene'];
+        <?php
+            $productCategoryChecked = $data['productCategory'] ?? "";
+             
             foreach($categoriesOptions as $option){
-                createCategorieOption($option);
+                createCategorieOption($option, $productCategoryChecked);
             }
         ?>
     </div>
@@ -48,7 +49,7 @@
         </div>
         <div class="form-floating_foot">
             <p>Essa é a descrição que aparecerá quando alguém acessar o seu produto. O texto deverá descrever as características de seu produto.</p>
-            <h6 id="<?php echo $dataNames['productDescription'] . '_inputLenght'; ?>"><?php echo strlen($data['productDescription'] ?? "") . "/" . $dataLimits['productDescription'] ?></h6>
+            <h6 id="productDescription_inputLenght"><?php echo strlen($data['productDescription'] ?? "") . "/" . $dataLimits['productDescription'] ?></h6>
         </div>
     </div>
     

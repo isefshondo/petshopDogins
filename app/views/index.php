@@ -40,23 +40,23 @@ include("../../public/utils/components/productCard.php");
     createHeaderSection("Categoria de produtos", false);
     ?>
     <ul class="categories">
-      <li>
+      <li class="optionLinkWrapper">
         <img src="../../public/imgs/accessories.svg" alt="Acessorios">
         <h1>Acessórios</h1>
       </li>
-      <li>
+      <li class="optionLinkWrapper">
         <img src="../../public/imgs/accessories.svg" alt="Acessorios">
         <h1>Alimentação</h1>
       </li>
-      <li>
+      <li class="optionLinkWrapper">
         <img src="../../public/imgs/accessories.svg" alt="Acessorios">
         <h1>Brinquedos</h1>
       </li>
-      <li>
+      <li class="optionLinkWrapper">
         <img src="../../public/imgs/accessories.svg" alt="Acessorios">
         <h1>Medicamentos</h1>
       </li>
-      <li>
+      <li class="optionLinkWrapper">
         <img src="../../public/imgs/accessories.svg" alt="Acessorios">
         <h1>Higiene e Limpeza</h1>
       </li>
