@@ -67,7 +67,7 @@
             <div class="form-floating_header">
                 <h3 class="form-floating_subtitle mb-2">Variações de peso</h3>    
                 <div>
-                    <input type="number" name="productSize" id="" placeholder="+ Adicionar peso" value="<?php echo $data['productSize'] ?? ""; ?>">
+                    <input type="number" name="productWeight" id="productWeight" placeholder="+ Adicionar peso" value="<?php echo $data['productWeight'] ?? ""; ?>">
                 </div>
             </div>
         </div>

@@ -1,7 +1,8 @@
 <?php
     include("../../controllers/scripts/session.php");
 
-    session_start();
+    if()
+    /*session_start();
 
     $data = $_SESSION['doc_tmp'] ?? "";
 
@@ -16,6 +17,6 @@
     }
 
     limpar_session_object('doc_tmp');
-
+*/
     header("location:../views/pagina_inicial.php");
 ?>

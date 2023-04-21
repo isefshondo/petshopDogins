@@ -83,7 +83,8 @@ btnsAdd.forEach((item, i) => {
         otherColors.append(colorPicker());
         numColors++;
       }else{
-        alert('Você só pode selecionar até ' + limit + ' cores');
+        msg = 'Você só pode selecionar até ' + limit + ' cores';
+        showAlert(msg);
       }
     }else if(btnsAdd[i].classList.contains('add-size')){
       const newSize = document.querySelector('.new-size');
@@ -211,9 +212,24 @@ formFloatingInputs.forEach((item, i) => {
   });
 });
 
+
+const universalProductCode_input = document.querySelector('.universalProductCode_input > input[type="number"]');
+
+document.addEventListener('DOMContentLoaded', function() {
+  noCode = document.querySelector('input[name="no-code"]');
+
+  // Verificar se o checkbox está marcado
+  if(noCode.checked){
+    universalProductCode_input.value = '';
+    universalProductCode_input.disabled = true;
+  }else{
+    universalProductCode_input.disabled = false;
+  }
+});
+
+
 if(universalProductCode_checkbox){
   universalProductCode_checkbox.addEventListener('change', (event) => {
-    const universalProductCode_input = document.querySelector('.universalProductCode_input > input[type="number"]');
   
     if(event.target.checked){
       universalProductCode_input.value = '';
@@ -245,7 +261,8 @@ if(productImages){
     dropAreaImages.innerHTML = "";
   
     if(input.files.length > limit){
-      alert('Você só pode selecionar até ' + limit + ' imagens');
+      msg = 'Você só pode selecionar até ' + limit + ' imagens';
+      showAlert(msg);
       input.value = '';
     }else{
       for(let i=0; i<input.files.length; i++){
@@ -273,6 +290,24 @@ if(productImages){
   });
   
 }
+
+const btnCancelar = document.getElementById("btnCancelar");
+const btnModalCancel = document.getElementById("btnModalCancel");
+const modal = document.getElementById('modal-product');
+
+btnCancelar.addEventListener('click', () => {
+  modal.classList.remove('d-none');
+});
+
+btnModalCancel.addEventListener('click', () => {
+  modal.classList.add('d-none');
+});
+
+modal.querySelector('.Iconfechar').addEventListener('click', () => {
+  modal.classList.add('d-none');
+});
+
+
 //FUNCTIONS
 
 selectSize = (size) => {
@@ -292,4 +327,14 @@ selectSize = (size) => {
   labelCheckbox.appendChild(document.createTextNode(` ${size}`));
 
   return labelCheckbox;
+}
+
+showAlert = (msg) => {
+  const alert = document.getElementById('alert');
+
+  alert.classList.remove('d-none');
+  alert.querySelector(".modal-del-text").textContent = msg;
+  alert.querySelector(".btn-danger").addEventListener('click', () => {
+    alert.classList.add('d-none');
+  });
 }

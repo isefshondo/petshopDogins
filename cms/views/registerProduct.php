@@ -16,8 +16,6 @@
         foreach($query_string as $key => $value){
             $doc[$key] = $value;            
         }
-        
-        var_dump($doc);
     }
 
     $query_string = base64_encode(http_build_query($doc));
@@ -32,11 +30,16 @@
 
             <section id="form_buttons">
                 <div class="form-buttons">
-                    <a class="btn btn-secondary" href="../controllers/cancelProductRegistration.php?$doc=<?php echo $query_string; ?>">Cancelar</a>
+                    <!-- <a class="btn btn-secondary" href="../controllers/cancelProductRegistration.php?$doc=<?php //echo $query_string; ?>">Cancelar</a> -->
+                    <a class="btn btn-secondary" id="btnCancelar">Cancelar</a>
                     <button type="submit" class="btn btn-primary"><?php echo $n_part == 4 ? "Finalizar" : "Continuar"; ?></button>
                 </div>
             </section>
         </form>
     </section>
 </main>
-<?php include("blades/footer.php"); ?>
+
+<?php 
+    include("../../public/utils/components/popup.php");
+    include("blades/footer.php"); 
+?>

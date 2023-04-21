@@ -40,39 +40,11 @@
         
         if($_GET['part']==5){ 
             $conn = $connectMongoDB('dogin');
-            //$db = $select_db($conn, 'dogin');
+
             if($conn){
-                echo "ok<br>";
-                //var_dump($conn);
-                //echo "<br><br>";
-                //var_dump($db);
-                
-                //echo "<br><br>";
-                //$create($conn, 'produtos', $doc_tmp);
                 $collection = 'produtos';
                 $insert = $conn->$collection->insertOne($doc_tmp);
-
-                echo "insert <br><br>:";
-                var_dump($insert);
-
-              /*  var_dump($doc_tmp);
-                
-                echo "<br><br>";
-                var_dump($conn->getManager());
-                
-                echo "<br><br>";
-                $disconnectMongoDB($conn);
-
-                $read = $readOne($conn, 'produtos', ['categoria_produto' => 'food']);
-                var_dump($read);
-                echo "<br><br>" . $read['categoria_produto'];
-
-                $updateOne($conn, 'produtos', ['categoria_produto' => 'food'], ['categoria_produto' => 'acessories']);
-
-                $read = $readOne($conn, 'produtos', ['categoria_produto' => 'acessories']);
-
-                echo "<br><br>" . $read['categoria_produto'];
-            */
+                header("location:../views/homePage.php");
                 
             }else{
                 var_dump($conn);

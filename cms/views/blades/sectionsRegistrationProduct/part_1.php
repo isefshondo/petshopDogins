@@ -76,7 +76,13 @@
                     <div class="universalProductCode_input">
                         <input type="number" id="<?php echo $dataNames['universalProductCode']; ?>" class="w-50" name="<?php echo $dataNames['universalProductCode']; ?>" data-limit="<?php echo $dataLimits['universalProductCode']; ?>" pattern="<?php echo $patterns['universalProductCode']; ?>" rows="2" value="<?php echo $data['universalProductCode'] ?? ""; ?>" required>
                         <div class="universalProductCode_checkbox">
-                            <input type="checkbox" name="sem_cod_produto"> Não o tenho agora
+                            <input type="checkbox" name="no-code"
+                                <?php
+                                    if(isset($data['no-code']) == "on"){
+                                        echo "checked";
+                                    }
+                                ?>
+                            > Não o tenho agora
                         </div>
                     </div>
                 </div>
