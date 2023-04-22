@@ -1,12 +1,5 @@
 <?php
 
-function reduceTextAddSuffix($string, $limit, $suffix){
- /* while(substr($string, $limit, 1)!='') {
-    $limit--;
-  }*/
-  return  substr($string, 0, $limit+1) . $suffix;
-}
-
 function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPrice) {
   echo 
   "<li class='productCard'>".

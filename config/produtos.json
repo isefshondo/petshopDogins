@@ -12,6 +12,8 @@
   "productPrice": "39,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Fantasia de Unicórnio Cansei de Ser Gato"
 },{
   "_id": {
@@ -27,6 +29,8 @@
   "productPrice": "59,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 25,
   "productName": "Camiseta Piticas Dragon Ball Goku para Cães"
 },{
   "_id": {
@@ -42,6 +46,8 @@
   "productPrice": "59,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 23,
   "productName": "Capa de Chuva Basic Griff Dog para Cães"
 },{
   "_id": {
@@ -57,6 +63,8 @@
   "productPrice": "29,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 22,
   "productName": "Bandana Piticas Homem de Ferro"
 },{
   "_id": {
@@ -72,6 +80,8 @@
   "productPrice": "49,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 21,
   "productName": "Fantasia Juba de Leão Cansei de Ser Gato"
 },{
   "_id": {
@@ -87,6 +97,8 @@
   "productPrice": "39,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Pelúcia Chalesco Crocodilo"
 },{
   "_id": {
@@ -102,6 +114,8 @@
   "productPrice": "39,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Brinquedo Jambo Pelúcia Big Duck para Cães"
 },{
   "_id": {
@@ -117,6 +131,8 @@
   "productPrice": "39,90",
   "productStock": "15",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Brinquedo de Pelúcia Chalesco Tatu"
 },{
   "_id": {
@@ -132,6 +148,8 @@
   "productPrice": "49,90",
   "productStock": "10",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Kit Degraus Hello Pet MDF Azul com 3 Peças para Gatos"
 },{
   "_id": {
@@ -147,6 +165,8 @@
   "productPrice": "49,90",
   "productStock": "10",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Brinquedo All For Paws Buddy KeeKee Bird para Cães - Rosa"
 },{
   "_id": {
@@ -162,6 +182,8 @@
   "productPrice": "69,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Kit Banho A Seco Para Cães + Limpa Carinha E Hidra."
 },{
   "_id": {
@@ -177,6 +199,8 @@
   "productPrice": "49,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Tapete Higiênico Papum para Cães de Pequeno"
 },{
   "_id": {
@@ -192,6 +216,8 @@
   "productPrice": "103,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Hidratante Soft Care Spray Hydra T 240ML"
 },{
   "_id": {
@@ -207,6 +233,8 @@
   "productPrice": "33,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Hidratante de Patinhas Pet Clean para Cães"
 },{
   "_id": {
@@ -222,6 +250,8 @@
   "productPrice": "24,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Colônia Pet Society Beeps Melancia"
 },{
   "_id": {
@@ -237,6 +267,8 @@
   "productPrice": "54,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Hemolitan Pet"
 },{
   "_id": {
@@ -252,6 +284,8 @@
   "productPrice": "54,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Glicopan Pet"
 },{
   "_id": {
@@ -267,6 +301,8 @@
   "productPrice": "54,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Glicopan Gold"
 },{
   "_id": {
@@ -282,6 +318,8 @@
   "productPrice": "54,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Condrotec Pet"
 },{
   "_id": {
@@ -297,6 +335,8 @@
   "productPrice": "34,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Epoclean Dog"
 },{
   "_id": {
@@ -312,6 +352,8 @@
   "productPrice": "19,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Golden Formula"
 },{
   "_id": {
@@ -327,6 +369,8 @@
   "productPrice": "24,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Origens"
 },{
   "_id": {
@@ -342,6 +386,8 @@
   "productPrice": "34,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Royal Canin"
 },{
   "_id": {
@@ -357,6 +403,8 @@
   "productPrice": "34,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Gran Plus"
 },{
   "_id": {
@@ -372,5 +420,7 @@
   "productPrice": "29,90",
   "productStock": "20",
   "size": "Unico",
+  "minStock": 10,
+  "amountSales": 2,
   "productName": "Premier Nattu"
 }]

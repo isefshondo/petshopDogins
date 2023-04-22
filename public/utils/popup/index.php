@@ -51,10 +51,10 @@
         Como editar meus produtos?
     </div>
     <div id="text-info">
-    Para editar seu produto, basta passar o mouse sobre o produto que deseja alterar e 
-    selecionar a opção “editar”, após isso você terá cacesso a uma interface semelhante 
-    a qual realizou o cadastro onde poderá alterar os dados da forma como preferir
-</div>
+        Para editar seu produto, basta passar o mouse sobre o produto que deseja alterar e 
+        selecionar a opção “editar”, após isso você terá cacesso a uma interface semelhante 
+        a qual realizou o cadastro onde poderá alterar os dados da forma como preferir
+    </div>
 </div>
 </body>
 </html>

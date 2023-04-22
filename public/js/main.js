@@ -126,6 +126,21 @@ btnsRemove.forEach((item, i) => {
   });
 });
 
+const info = document.querySelector('.info');
+const modalInfo = document.getElementById('modal-info');
+
+info.addEventListener('mouseover', () => {
+  console.log(modalInfo);
+  console.log(info);
+  modalInfo.classList.remove('d-none');
+});
+
+info.addEventListener('mouseout', () => {
+  if(!modalInfo.classList.contains('d-none')){
+    modalInfo.classList.add('d-none');
+  }
+});
+
 colorPicker = () => {
   wrapper = document.createElement('div');
   inputColor = document.createElement('input');
