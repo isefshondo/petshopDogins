@@ -8,7 +8,8 @@
                 "<div class='container'>";
         
         foreach($products as $key){
-            createProductCardMask($key['productImage'], $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
+            $imagem = $key['productImages'][0];
+            createProductCardMask($key['_id'], $imagem, $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
         }
         
         echo "</div></div>";

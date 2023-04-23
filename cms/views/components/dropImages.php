@@ -14,7 +14,7 @@
                 if(isset($data['productImages'])){
                     foreach($data['productImages'] as $src){
                         echo "<figure class='drop-area_fig'>".
-                                "<img src='$src' class='drop-area_fig-img'>".
+                                "<img src='data:image/jpeg;base64,".$src."' class='drop-area_fig-img'>".
                                 "<span class='closeIcon'><i class='fa-sharp fa-solid fa-circle-xmark'></i></span>".
                             "</figure>";
                     }

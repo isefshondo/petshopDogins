@@ -1,17 +1,18 @@
 <?php
-    function paginateResults($conn, $collection, $total, $currentPage, $resultsPerPage){
+    function paginateResults($collection, $total, $currentPage, $resultsPerPage){
         
         $totalPages = ceil($total / $resultsPerPage);
 
         $initial = ($currentPage - 1) * $resultsPerPage;
-        $products = $conn->$collection->find([], ['skip' => $initial, 'limit' => 4]);
+        $products = $collection->find([], ['sort' => ['_id' => -1], 'skip' => $initial, 'limit' => 4]);
         
-        echo "<div class='productList border-radius_top'>".
+        echo "<div class='productList otherProducts border-radius_top'>".
                 "<h2 class='title'>Outros Produtos</h2>".
                 "<div class='container'>";
 
         foreach($products as $key){
-            createProductCardMask($key['productImage'], $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
+            $imagem = $key['productImages'][0];
+            createProductCardMask($key['_id'], $imagem, $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
         }
 
         echo "</div></div>";
@@ -19,17 +20,19 @@
         $i = 1;
 
         while($i<=2){
-            $products = $conn->$collection->find([], ['skip' => $initial + 4 * $i, 'limit' => 4]);
+            if($collection->count([], ['skip' => $initial + 4 * $i, 'limit' => 4]) > 0){
+                $products = $collection->find([], ['skip' => $initial + 4 * $i, 'limit' => 4]);
             
-            echo "<div class='productList otherProducts'>".
-                "<div class='container'>";
+                echo "<div class='productList otherProducts'>".
+                    "<div class='container'>";
 
-            foreach($products as $key){
-                createProductCardMask($key['productImage'], $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
+                foreach($products as $key){
+                    $imagem = $key['productImages'][0];
+                    createProductCardMask($key['_id'], $imagem, $key['productName'], $key['brandName'], $key['productWeight'], $key['productPrice']);
+                }
+
+                echo "</div></div>";
             }
-
-            echo "</div></div>";
-
             $i++;
         }
 

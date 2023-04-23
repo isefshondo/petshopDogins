@@ -4,7 +4,7 @@ function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPr
   echo 
   "<li class='productCard'>".
     "<figure class='productImg'>".
-      "<img src='".$imgName."' alt='Produtos AUUdaciosos'>".
+    "<img src='data:image/jpeg;base64,".$imgName."' alt='Produtos AUUdaciosos' />".
     "</figure>".
     "<hgroup class='productDesc'>".
       "<h2>".$productName."</h2>".
@@ -19,15 +19,18 @@ function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPr
 
 ?>
 <?php
-    function createProductCardMask($imgName, $productName, $brandName, $oldPrice, $newPrice){
+    function createProductCardMask($id, $imgName, $productName, $brandName, $oldPrice, $newPrice){
 ?>
         <div class="productCardWrapper">
             <ul>
                 <?php createProductCard($imgName, $productName, $brandName, $oldPrice, $newPrice);?>
             </ul>
             <div class="productCardMask d-none">
-                <button class="btn btn-primary">Editar</button>
-                <button class="btn btn-secondary">Excluir</button>
+                <form action="updateProduct.php" method="post" class="d-flex">
+                  <input type="hidden" name="id" value="<?php echo $id; ?>">
+                  <button class="btn btn-primary">Editar</button>
+                  <button type="button" class="btn btn-secondary btn-delete">Excluir</button>
+                </form>
             </div>
         </div>
 <?php

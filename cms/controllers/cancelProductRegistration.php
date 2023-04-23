@@ -1,9 +1,10 @@
 <?php
     include("../../controllers/scripts/session.php");
 
-    if()
-    /*session_start();
-
+    session_start();
+    session_destroy();
+        
+/*
     $data = $_SESSION['doc_tmp'] ?? "";
 
     session_write_close();
@@ -18,5 +19,5 @@
 
     limpar_session_object('doc_tmp');
 */
-    header("location:../views/pagina_inicial.php");
+    header("location:../views/homePage.php");
 ?>

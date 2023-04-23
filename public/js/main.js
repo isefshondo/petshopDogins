@@ -129,17 +129,19 @@ btnsRemove.forEach((item, i) => {
 const info = document.querySelector('.info');
 const modalInfo = document.getElementById('modal-info');
 
-info.addEventListener('mouseover', () => {
-  console.log(modalInfo);
-  console.log(info);
-  modalInfo.classList.remove('d-none');
-});
-
-info.addEventListener('mouseout', () => {
-  if(!modalInfo.classList.contains('d-none')){
-    modalInfo.classList.add('d-none');
-  }
-});
+if(info){
+  info.addEventListener('mouseover', () => {
+    console.log(modalInfo);
+    console.log(info);
+    modalInfo.classList.remove('d-none');
+  });
+  
+  info.addEventListener('mouseout', () => {
+    if(!modalInfo.classList.contains('d-none')){
+      modalInfo.classList.add('d-none');
+    }
+  });
+}
 
 colorPicker = () => {
   wrapper = document.createElement('div');
@@ -233,12 +235,14 @@ const universalProductCode_input = document.querySelector('.universalProductCode
 document.addEventListener('DOMContentLoaded', function() {
   noCode = document.querySelector('input[name="no-code"]');
 
-  // Verificar se o checkbox está marcado
-  if(noCode.checked){
-    universalProductCode_input.value = '';
-    universalProductCode_input.disabled = true;
-  }else{
-    universalProductCode_input.disabled = false;
+  if(noCode){
+    // Verificar se o checkbox está marcado
+    if(noCode.checked){
+      universalProductCode_input.value = '';
+      universalProductCode_input.disabled = true;
+    }else{
+      universalProductCode_input.disabled = false;
+    }
   }
 });
 
@@ -307,21 +311,46 @@ if(productImages){
 }
 
 const btnCancelar = document.getElementById("btnCancelar");
-const btnModalCancel = document.getElementById("btnModalCancel");
-const modal = document.getElementById('modal-product');
 
-btnCancelar.addEventListener('click', () => {
-  modal.classList.remove('d-none');
-});
+if(btnCancelar){
+  const btnModalCancel = document.getElementById("btnModalCancel");
+  const modal = document.getElementById('modal-product');
+
+  btnCancelar.addEventListener('click', () => {
+    modal.classList.remove('d-none');
+  });
+
+  btnModalCancel.addEventListener('click', () => {
+    modal.classList.add('d-none');
+  });
+
+  modal.querySelector('.Iconfechar').addEventListener('click', () => {
+    modal.classList.add('d-none');
+  });
+}
+
+const btnDelete = [...document.querySelectorAll('.btn-delete')];
+
+const modalDelete = document.getElementById('modal-product-delete');
+const btnModalCancel = modalDelete.querySelector("#btnModalCancel");
+
+  btnDelete.forEach((item, i) => {
+      
+    btnDelete[i].addEventListener('click', () => {
+      let wrapper = btnDelete[i].closest('form');
+      let id = wrapper.querySelector('input[name="id"]').value;
+      modalDelete.querySelector('input[name="id"]').value= id;
+      modalDelete.classList.remove('d-none');
+    });
+  });
 
 btnModalCancel.addEventListener('click', () => {
-  modal.classList.add('d-none');
+  modalDelete.classList.add('d-none');
 });
 
-modal.querySelector('.Iconfechar').addEventListener('click', () => {
-  modal.classList.add('d-none');
+modalDelete.querySelector('.Iconfechar').addEventListener('click', () => {
+  modalDelete.classList.add('d-none');
 });
-
 
 //FUNCTIONS
 

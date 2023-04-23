@@ -1,5 +1,6 @@
 <?php 
     include("../../config/conn.php");
+    include("../../public/utils/components/popup.php");
     include("./blades/header.php");
     include("./components/productCardMask.php");
     include("./components/productList.php");
@@ -31,22 +32,26 @@
         </div>
         <section class="productsList">
             <?php
-                $conn = $connectMongoDB('dogin');
-                $collection = 'products';
+                $collection = $db->products;
                 
-                $total = $conn->$collection->count();
-                $sort = array("_id" => -1);
-                $limit = 5;
+                $total = $collection->count();
                 
-                $products = $conn->$collection->find([], ['sort' => $sort, 'limit' => 4]);
-                createProductList("Mais comprados", "#BCEFFF", $products);
-
-                $sort = array("quantidade_estoque" => -1);
-
-                $products = $conn->$collection->find([], ['sort' => $sort, 'limit' => 4]);
-                createProductList("Baixo Estoque", "#B8b8b8", $products);
+                if($collection->count(["amountSales" => ['$exists' => true]]) > 0){
+                    $bestSellers = $collection->find([], ["sort" => ["amountSales" => -1], 'limit' => 4]);
+                    createProductList("Mais comprados", "#BCEFFF", $bestSellers);
+                }
+        
+                if($collection->count(['$where' => 'this.productStock <= this.minStock'], ['limit' => 4]) > 0){       
+                    $lowSotck = $collection->find(['$where' => 'this.productStock <= this.minStock'], ['limit' => 4]);
+                    createProductList("Baixo Estoque", "#B8b8b8", $lowSotck);
+                }
                 
-                paginateResults($conn, $collection, $total, $_GET['page'] ?? 1, 12);
+                if($collection->count() > 0){
+                    paginateResults($collection, $total, $_GET['page'] ?? 1, 12);
+                }else{
+                    echo "<p>Nenhum produto cadastrado</p>";
+                }
+                
             ?>
         </section>
     </section>

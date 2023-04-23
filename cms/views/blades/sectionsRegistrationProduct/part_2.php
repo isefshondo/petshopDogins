@@ -80,6 +80,9 @@
                 <div>
                     <input type="number" name="productStock" id="productStock" value="<?php echo $data['productStock'] ?? 1; ?>">
                 </div>
+                <div>
+                    <input type="number" name="minStock" id="minStock" value="<?php echo $data['minStock'] ?? 1; ?>">
+                </div>
             </div>
         </div>
 
