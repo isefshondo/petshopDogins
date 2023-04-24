@@ -8,10 +8,8 @@
       </div>
     </div>
     <div class="form-buttons w-25">  
-      <div>
-        <a href="../../app/views/">Voltar à loja</a>
-      </div>
       <div class="buttonWrapper">
+        <a href="../../app/views/">Voltar à loja</a>
         <button class = "btnSeller">Sair/Logout</button>
       </div>
     </div>
@@ -19,19 +17,19 @@
   <nav class = "navCategory" style="font-size: 12px;">
     <ul>
       <li>
-        <a href="#">
+        <a href="./homePage.php">
             <span class = "likeIcon"></span>
             Mais comprados
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="./homePage.php">
             <span class = "cartIcon"></span>
             Baixo Estoque 
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="./registerProduct.php">
             <span class = "newProductIcon"></span>
             Cadastrar Produto
         </a>

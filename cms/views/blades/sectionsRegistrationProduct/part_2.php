@@ -14,7 +14,7 @@
         <div class="form-floating_header">
             <div class="form-floating_row mb-2">
                 <h3 class="form-floating_title mb-4">Preencha as informações do seu produto</h3>
-                <h6>1/2</h6>
+                <h6 class="countFormsFloating"></h6>
             </div>
             <div class="mb-4">
                 <div class="form-floating_info mb-4">
@@ -88,9 +88,10 @@
         <div class="form-floating_row mb-4">
             <div class="form-floating_header">
                 <h3 class="form-floating_subtitle mb-2">Quantidade em estoque</h3>    
-                <div>
+                <div class="mb-3">
                     <input type="number" name="productStock" id="productStock" value="<?php echo $data['productStock'] ?? 1; ?>">
                 </div>
+                <h3 class="form-floating_subtitle mb-2">Quantidade minima em estoque</h3>    
                 <div>
                     <input type="number" name="minStock" id="minStock" value="<?php echo $data['minStock'] ?? 1; ?>">
                 </div>
@@ -102,7 +103,7 @@
         <div class="form-floating_header mb-4">
             <div class="form-floating_row mb-1">
                 <h6><em>*</em> Obrigatório</h6>
-                <h6>2/2</h6>
+                <h6 class="countFormsFloating"></h6>
             </div>
             <div>
                 <h3 class="form-floating_title mb-1">Preencha a marca do produto</h3>

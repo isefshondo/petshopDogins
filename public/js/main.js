@@ -236,6 +236,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const productImage = document.getElementById('productImage');
   const productImages = document.querySelector('#productImages');
 
+  let formFloatings = [...document.querySelectorAll(".form-floating")];
+
+  let countForms = formFloatings.length;
+
+  formFloatings.forEach((item,i) => {
+    formFloatings[i].querySelector('.countFormsFloating').textContent = (i+1) + "/" + countForms;
+  });
+  console.log(countForms);
+
+  
+
   if(productImages){
     productImages.addEventListener('change', (event) => {
       const input = event.target;

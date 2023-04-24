@@ -210,6 +210,11 @@ footer {
   padding-block: 2.5em;
 }
 
+.items{
+  display: flex;
+  flex-direction: column;
+}
+
 .doginsInfo {
   display: flex;
   flex-direction: column;
@@ -1301,6 +1306,9 @@ label{
   margin-bottom: 4%;
 }
 
+em{
+  color: var(--bgComponents);
+}
 .mx-80{
   height: 185px;
 }
@@ -1836,3 +1844,131 @@ li{
   justify-content: center;
 }
 
+
+/*Style Login/Cadastro*/
+#img-login img{
+  position: flex;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#forms-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 80px;
+
+  font-size: 20px;
+  
+}
+
+
+
+#forms{
+  border-style: solid;
+  border-color: var(--bgComponents);
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 3rem;
+  margin-top: 20px;
+  width: 80%;
+}
+#text-login{
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btnLoginWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-link{
+  font-size: 1em;
+  font-weight: 500;
+  color: #727272;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 12px;
+}
+
+#text-login label {
+  text-align: left;
+}
+
+#text-login > input {
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 10px;
+  border-radius: 6px;
+  border: 0.7px solid;
+  color: #313131;
+}
+
+.btnLogin {
+  background: var(--bgComponents);
+  border-radius: 10px;
+  border-width: 0;
+  font-size: 1.25em;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 80%;
+  align-items: center;
+}
+#titulo-forms{
+  display: flex;
+  column-gap: 10px;
+}
+
+#img-cadastro img{
+  position: flex;
+  float: right;
+  width: 50%;
+
+}
+/*Fim do Style Login*/
+
+.homePageHead{
+  width: 100%;
+  height: 450px;
+  background: url("../imgs/homePage_banner.svg") no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head > input[type="search"]{
+  width: 58%;
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 21px;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.homePageHead > .head{
+  width: 62%;
+  font-size: 24px;
+  align-items: flex-start;
+}

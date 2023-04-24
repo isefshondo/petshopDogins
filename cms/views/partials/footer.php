@@ -12,7 +12,7 @@
   </div>
   <nav class = "quickLinks">
     <h3>Quick Links</h3>
-    <ul>
+    <ul class="items">
       <a href="#"><li>Sobre nós</li></a>
       <a href="#"><li>Contatos</li></a>
       <a href="#"><li>SAC</li></a>
@@ -20,7 +20,7 @@
   </nav>
   <nav class = "mostClicked">
     <h3>Mais acessados</h3>
-    <ul>
+    <ul class="items">
       <a href="#"><li>Mais comprados</li></a>
       <a href="#"><li>Brinquedos</li></a>
       <a href="#"><li>Ração para filhotes</li></a>

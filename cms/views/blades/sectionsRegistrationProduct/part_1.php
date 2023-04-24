@@ -17,7 +17,7 @@
         <div class="form-floating_header mb-4">
             <div class="form-floating_row mb-2">
                 <h6><em>*</em> Obrigatório</h6>
-                <h6>1/3</h6>
+                <h6 class="countFormsFloating"></h6>
             </div>
             <div>
                 <h3 class="form-floating_title mb-1">Preencha o título do anúncio</h3>
@@ -37,7 +37,7 @@
         <div class="form-floating_header mb-4">
             <div class="form-floating_row mb-2">
                 <h6><em>*</em> Obrigatório</h6>
-                <h6>2/3</h6>
+                <h6 class="countFormsFloating"></h6>
             </div>
             <div>
                 <h3 class="form-floating_title mb-1">Adicione uma descrição</h3>
@@ -57,7 +57,7 @@
         <div class="form-floating_header mb-4">
             <div class="form-floating_row mb-1">
                 <h6><em>*</em> Obrigatório</h6>
-                <h6>3/3</h6>
+                <h6 class="countFormsFloating"></h6>
             </div>
             <div class="form-floating_row mb-1">
                 <div>

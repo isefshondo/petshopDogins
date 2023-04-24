@@ -11,6 +11,12 @@
     $collection = $db->products;
     $total = $collection->count();
 ?>
+<section class="homePageHead">
+    <div class="head">
+        <h1>Cadastre ou edite os seus produtos</h1>
+        <input type="search" name="busca" id="busca" placeholder="Pesquisar por um produto já cadastrado">
+    </div>
+</section>
 <main class="catalog">
     <section class="sidebar">
         <div class="cardButton">
@@ -64,6 +70,7 @@
         </div>
         <section class="productsList">
             <?php
+
                 if(isset($_GET['sub'])){
                     if($collection->count(["productCategory" => $_GET['sub']]) > 0){
                         $sub = $collection->find(["productCategory" => $_GET['sub']]);
@@ -73,6 +80,8 @@
                     }
                 }
 
+                
+                echo "<div id='resultados'></div>";
                 echo "<div id='filters'></div>";
                 
                 if($collection->count(["amountSales" => ['$exists' => true]]) > 0){
@@ -96,9 +105,9 @@
     </section>
 </main>
 
-<section>
-        <?php
-            createPagination($total, 15, $_GET['page'] ?? 1, "homePage.php");
-        ?>
-    </section>
+<section class="mb-4">
+    <?php
+        createPagination($total, 15, $_GET['page'] ?? 1, "homePage.php");
+    ?>
+</section>
 <?php include("./blades/footer.php"); ?>

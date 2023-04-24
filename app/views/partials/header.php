@@ -15,7 +15,7 @@
     </a>
     <div class="buttonWrapper">
       <a href="../../cms/views/" class = "btnSeller">Sou vendedor</a>
-      <button class = "btnLoginSignin">Entrar/Cadastrar</button>
+      <a href="404.php" class = "btnLoginSignin">Entrar/Cadastrar</a>
     </div>
   </div>
   <nav class = "navCategory">

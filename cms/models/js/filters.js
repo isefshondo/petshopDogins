@@ -14,3 +14,22 @@ $('input[name="filters[]"]').change(function(){
         }
     });
 });
+
+$(document).ready(function() {
+    // Quando o campo de busca é alterado, buscar os resultados
+    $('#busca').on('input', function() {
+      // Recuperar a string de busca
+      var busca = $(this).val();
+      
+      // Fazer a requisição AJAX para o arquivo buscar.php
+      $.ajax({
+        type: 'POST',
+        url: '../models/search.php',
+        data: {busca: busca},
+        success: function(result) {
+
+          $('#resultados').html(result);
+        }
+      });
+    });
+  });
