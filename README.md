@@ -9,7 +9,7 @@ bem como a definição de seus preços, descrições e imagens.</p><br>
 ## Arquitetura de Arquivos
 
 <li><strong>📁 app/</strong>:  Diretório contendo a implementação do E-commerce, onde os clientes poderão visualizar os produtos, realizar compras, entre outras atividades relacionadas ao uso da plataforma.</li><br>
-<li><strong>📁 cms/</strong>: Diretório onde se encontra o sistema de gerenciamento do E-commerce. É através deste sistema que o administrador poderá cadastrar, atualizar ou excluir produtos, gerenciar pedidos e usuários, entre outras atividades de gerenciamento.</li><br>
+<li><strong>📁 cms/</strong>: Diretório onde se encontra o sistema de gerenciamento do E-commerce. É através deste sistema que o administrador poderá cadastrar, atualizar ou excluir produtos, entre outras atividades de gerenciamento.</li><br>
 <li><strong>📁 config/</strong>: Contém o arquivo de conexão com o banco de dados, responsável por estabelecer a conexão com o banco de dados utilizado pela aplicação.</li><br>
 
 ```
@@ -17,7 +17,7 @@ bem como a definição de seus preços, descrições e imagens.</p><br>
    ├── 📁 composer/     <!-- Gerenciador de depêndencias necessário para manipulação do MongoDB com PHP -->
    ├── 📄 conn.php      <!-- Arquivo de conexão com o banco de dados -->
    ├── 📄 products.json <!-- Exportação dos documentos contidos na coleção 'products' -->
-   └── 📄 users.php     <!-- Exportação dos documentos contidos na coleção 'users'. Possui o documento com usuário e senha 'admin'
+   └── 📄 users.php     <!-- Exportação dos documentos contidos na coleção 'users'. Possui o documento com usuário e senha 'admin' -->
 ```
 
 <li><strong>📁 public/</strong>: Contém os arquivos utilizados na aplicação pelo Ecommerce e CMS</li><br><br>
