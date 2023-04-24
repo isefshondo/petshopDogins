@@ -13,3 +13,30 @@ bem como a definição de seus preços, descrições e imagens.</p>
 ```
 git clone https://github.com/isefsh/petshopDogins.git
 ```
+
+#Configurando o MongoDB para utilização com PHP
+
+###### Requisitos
+
+<li>PHP (versão 7.2 ou superior)</li>
+<li>MongoDB</li>
+<li>Composer</li>
+
+## Verificando a versão do PHP
+
+<p>Crie um arquivo.php com o codigo abaixo na pasta htdocs do xampp e execute no navegador. Será exibido no navegador a versão do PHP e se a extensão do MongoDB está instalado</p>
+
+```
+<?php 
+    $php_version = phpversion();
+    echo "A versão do PHP instalada é: " . $php_version . "<br><br>";
+
+    if (extension_loaded('mongodb')) {
+        echo "O MongoDB está instalado no PHP";
+    } else {
+        echo "O MongoDB não está instalado no PHP";
+    } 
+?>
+```
+
+<p></p>
