@@ -1,6 +1,6 @@
 # Petshop Dogin's
 <aside><strong>Este projeto tem como intuito colocar em prática a metodologia Scrum, uma abordagem ágil de gerenciamento de projetos que se baseia em sprints, 
-reuniões diárias e retrospectivas para entregar um produto de alta qualidade de forma eficiente e eficaz</strong></aside>
+reuniões diárias e retrospectivas para entregar um produto de alta qualidade de forma eficiente e eficaz.</strong></aside>
 
 ###### Descrição
 <p> O projeto consiste em um ecommerce onde um administrador poderá realizar o gerenciamento dos produtos cadastrados, incluindo a adição, edição e exclusão de produtos, 
@@ -49,9 +49,9 @@ git clone https://github.com/isefsh/petshopDogins.git
     $php_version = phpversion();
     echo "A versão do PHP instalada é: " . $php_version . "<br><br>";
 
-    if (extension_loaded('mongodb')) {
+    if(extension_loaded('mongodb')){
         echo "O MongoDB está instalado no PHP";
-    } else {
+    }else{
         echo "O MongoDB não está instalado no PHP";
     } 
 ?>
