@@ -8,12 +8,11 @@ let purchaseFrequently = document.getElementById('purchaseFrequently');
 let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequentlyInfo')[0];
 
 const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
-const productImage = document.getElementById('productImage');
+
 const productCards = [...document.querySelectorAll('.productCardWrapper')];
 const formFloatingInputs = [...document.querySelectorAll('.form-floating_input > textarea, .form-floating_input > input[type="text"], input[type="number"]')];
 const universalProductCode_checkbox = document.querySelector('.universalProductCode_checkbox');
 const categoriesOptions = [...document.querySelectorAll('.categoriesOption')];
-const productImages = document.querySelector('#productImages');
 
 productsWrapper.forEach((item, i) => {
   const previousButton = [...document.querySelectorAll('.leftButton')];
@@ -234,6 +233,50 @@ const universalProductCode_input = document.querySelector('.universalProductCode
 
 document.addEventListener('DOMContentLoaded', function() {
   noCode = document.querySelector('input[name="no-code"]');
+  const productImage = document.getElementById('productImage');
+  const productImages = document.querySelector('#productImages');
+
+  if(productImages){
+    productImages.addEventListener('change', (event) => {
+      const input = event.target;
+      let dropAreaImages = document.getElementById('drop-area_imgs');
+      const limit = productImages.getAttribute('data-limit');
+      const numFigures = dropAreaImages.querySelectorAll('.drop-area_fig').length;
+    
+      dropAreaImages.innerHTML = "";
+    
+      if(input.files.length > limit || numFigures > limit){
+        msg = 'Você só pode selecionar até ' + limit + ' imagens';
+        showAlert(msg);
+        input.value = '';
+      }else{
+        for(let i=0; i<input.files.length; i++){
+            const reader = new FileReader();
+            reader.onload = () => {
+                const imagePreview = document.createElement("img");
+                const figure = document.createElement("figure");
+                const span = document.createElement("span");
+                figure.className = "drop-area_fig";
+                span.className = "closeIcon";
+                span.innerHTML = "<i class='fa-sharp fa-solid fa-circle-xmark'></i>";
+                imagePreview.className = "drop-area_fig-img";
+                imagePreview.src = reader.result;
+                figure.appendChild(imagePreview);
+                figure.appendChild(span);
+                dropAreaImages.appendChild(figure);
+  
+                span.addEventListener('click', () => {
+                    dropAreaImages.removeChild(figure);
+                    console.log(dropAreaImages);
+                });
+            };
+            reader.readAsDataURL(input.files[i]);
+        }
+      }
+    });
+    
+  }
+  
 
   if(noCode){
     // Verificar se o checkbox está marcado
@@ -270,45 +313,6 @@ categoriesOptions.forEach((item, i) => {
     categoriesOptions[i].classList.add('checked');
   });
 });
-
-if(productImages){
-  productImages.addEventListener('change', (event) => {
-    const input = event.target;
-    const dropAreaImages = document.getElementById('drop-area_imgs');
-    const limit = productImages.getAttribute('data-limit');
-  
-    dropAreaImages.innerHTML = "";
-  
-    if(input.files.length > limit){
-      msg = 'Você só pode selecionar até ' + limit + ' imagens';
-      showAlert(msg);
-      input.value = '';
-    }else{
-      for(let i=0; i<input.files.length; i++){
-          const reader = new FileReader();
-          reader.onload = () => {
-              const imagePreview = document.createElement("img");
-              const figure = document.createElement("figure");
-              const span = document.createElement("span");
-              figure.className = "drop-area_fig";
-              span.className = "closeIcon";
-              span.innerHTML = "<i class='fa-sharp fa-solid fa-circle-xmark'></i>";
-              imagePreview.className = "drop-area_fig-img";
-              imagePreview.src = reader.result;
-              figure.appendChild(imagePreview);
-              figure.appendChild(span);
-              dropAreaImages.appendChild(figure);
-
-              span.addEventListener('click', () => {
-                  dropAreaImages.removeChild(figure);
-              });
-          };
-          reader.readAsDataURL(input.files[i]);
-      }
-    }
-  });
-  
-}
 
 const btnCancelar = document.getElementById("btnCancelar");
 
@@ -382,3 +386,14 @@ showAlert = (msg) => {
     alert.classList.add('d-none');
   });
 }
+
+function removeFigure(event) {
+  const figure = event.target.closest('.drop-area_fig');
+  if (figure) {
+    figure.remove();
+  }
+}
+
+document.querySelectorAll('.closeIcon').forEach((closeIcon) => {
+  closeIcon.addEventListener('click', removeFigure);
+});

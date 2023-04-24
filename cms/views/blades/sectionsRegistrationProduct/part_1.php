@@ -25,11 +25,11 @@
             </div>
         </div>
         <div class="form-floating_input">
-            <textarea id="<?php echo $dataNames['productName']; ?>" name="<?php echo $dataNames['productName']; ?>" data-limit="<?php echo $dataLimits['productName']; ?>" required><?php echo $data['productName'] ?? "";?></textarea>
+            <textarea id="productName" name="productName" data-limit="<?php echo $dataLimits['productName']; ?>" required><?php echo $data['productName'] ?? "";?></textarea>
         </div>
         <div class="form-floating_foot">
             <p>Evite incluir condições de venda como parcelamento sem juros ou frete grátis. Se seu produto é genérico, indique a marca verdadeira.</p>
-            <h6 id="<?php echo $dataNames['productName'] . '_inputLenght'; ?>"><?php echo strlen($data['productName'] ?? "") . "/" . $dataLimits['productName']; ?></h6>
+            <h6 id="productName_inputLenght"><?php echo strlen($data['productName'] ?? "") . "/" . $dataLimits['productName']; ?></h6>
         </div>
     </div>
 
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="form-floating_input">
-            <textarea id="<?php echo $dataNames['productDescription']; ?>" name="<?php echo $dataNames['productDescription']; ?>" data-limit="<?php echo $dataLimits['productDescription']; ?> " required rows="4"><?php echo $data['productDescription'] ?? ""; ?></textarea>
+            <textarea id="productDescription" name="productDescription" data-limit="<?php echo $dataLimits['productDescription']; ?> " required rows="4"><?php echo $data['productDescription'] ?? ""; ?></textarea>
         </div>
         <div class="form-floating_foot">
             <p>Essa é a descrição que aparecerá quando alguém acessar o seu produto. O texto deverá descrever as características de seu produto.</p>
@@ -74,7 +74,7 @@
                 <div class="w-100">
                     <h3 class="form-floating_subtitle mb-2">Código universal de produto</h3>
                     <div class="universalProductCode_input">
-                        <input type="number" id="<?php echo $dataNames['universalProductCode']; ?>" class="w-50" name="<?php echo $dataNames['universalProductCode']; ?>" data-limit="<?php echo $dataLimits['universalProductCode']; ?>" pattern="<?php echo $patterns['universalProductCode']; ?>" rows="2" value="<?php echo $data['universalProductCode'] ?? ""; ?>" required>
+                        <input type="number" id="universalProductCode" class="w-50" name="universalProductCode" data-limit="<?php echo $dataLimits['universalProductCode']; ?>" pattern="<?php echo $patterns['universalProductCode']; ?>" rows="2" value="<?php echo $data['universalProductCode'] ?? ""; ?>" required>
                         <div class="universalProductCode_checkbox">
                             <input type="checkbox" name="no-code"
                                 <?php

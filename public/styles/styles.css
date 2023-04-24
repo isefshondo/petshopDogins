@@ -1466,19 +1466,10 @@ li{
 }
 
 .sidebar{
-  width: 20%;
-  padding: 1em;
-  border: 1px solid #000;
-}
-
-.cardButton{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
+  width: 15%;
   padding: 0.5em;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -1489,6 +1480,39 @@ li{
   letter-spacing: -0.015em;
 
   color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar > .line_horizontal{
+  margin: 2em 0 0.5em;
+}
+
+.sidebar > label{
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar_items{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_items > :nth-child(odd){
+  margin: 0.5em 0;
+}
+
+.productListHead{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 0.5em;
 }
 .cardButton > .btn,
 .cardButton > h3{
@@ -1523,7 +1547,7 @@ li{
 }
 
 .products{
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -1551,6 +1575,22 @@ li{
   
 }
 
+#filters{
+  width: 100%;
+}
+
+.bg-primary{
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.bg-secondary{
+  background: #BCEFFF;
+}
+
+.bg-terciary{
+  background: #B8b8b8;
+}
+
 .productList.otherProducts{
   border-radius: 0;
   margin: 0.5em 1em;
@@ -1568,7 +1608,8 @@ li{
   border-bottom-right-radius: 20px !important;
 }
 
-.productList > .title{
+.productList > .title,
+.productListHead > .title{
   font-weight: 500;
   font-size: 30px;
   line-height: 60px;

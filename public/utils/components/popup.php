@@ -16,7 +16,7 @@
         <span class = "Iconfechar"></span>
         <h3 class="modal-del-title">ATENÇÃO!</h3> 
         <div class="modal-del-text">Tem certeza que deseja deletar este produto?</div>
-            <form action="../controllers/delete.php" method="post" class="d-flex">
+            <form action="../models/delete.php" method="post" class="d-flex">
                 <input type="hidden" name="id">
                 <div class="button-del-product"> 
                     <a type="button" id="btnModalCancel" class="btn-terciary">Cancelar</a> 

@@ -1,3 +1,14 @@
+<?php
+    if(isset($data)){
+        if(is_a($data, 'MongoDB\Model\BSONDocument')){
+            $colors = $data['productColors']->getArrayCopy();
+            $data_sizes = $data['sizes']->getArrayCopy();
+        }else{
+            $colors = $data['productColors'];
+            $data_sizes = $data['sizes'];
+        }
+    }
+?>
 <section id="part_2">
     <div class="form-floating">
         <div class="form-floating_header">
@@ -37,7 +48,7 @@
                 <div id="otherColors" data-limit="5">
                     <?php
                         if(isset($data['productColors']) && count($data['productColors']) > 1){
-                            foreach(array_slice($data['productColors'], 1) as $color){
+                            foreach(array_slice($colors, 1) as $color){
                                 createColorPicker($color, true);
                             }
                         }
@@ -52,8 +63,8 @@
             <div class="form-floating_header">
                 <h3 class="form-floating_subtitle mb-2">Variações de tamanho</h3>    
                 <?php 
-                    if(isset($data['sizes'])){
-                        createSelectSizes($sizes, $data['sizes']);
+                    if(isset($data_sizes)){
+                        createSelectSizes($sizes, $data_sizes);
                     }else{
                         createSelectSizes($sizes);
                     }

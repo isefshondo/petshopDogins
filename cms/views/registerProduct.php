@@ -8,17 +8,6 @@
     include("components/selectSizes.php");
 
     $n_part = $_GET['part'] ?? 1;
-
-   /* $doc = array();
-
-    if(isset($_GET['doc_tmp'])){
-        parse_str(base64_decode($_GET['doc_tmp']), $query_string);
-        foreach($query_string as $key => $value){
-            $doc[$key] = $value;            
-        }
-    }
-
-    $query_string = base64_encode(http_build_query($doc));*/
 ?>
 <main class="container">
     <section>

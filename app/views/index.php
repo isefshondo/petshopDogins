@@ -32,6 +32,12 @@ include("../../public/utils/components/productCard.php");
     <ul class="productsWrapper">
       <?php
       createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       ?>
     </ul>
   </section>
@@ -68,6 +74,13 @@ include("../../public/utils/components/productCard.php");
     ?>
     <ul class="productsWrapper">
       <?php
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       ?>
     </ul>
