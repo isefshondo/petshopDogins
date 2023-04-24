@@ -47,19 +47,19 @@ include("../../public/utils/components/productCard.php");
         <h1>Acessórios</h1>
       </li>
       <li class="optionLinkWrapper">
-        <img src="../../public/imgs/accessories.svg" alt="Acessorios">
+        <img src="../../public/imgs/food.svg" alt="Acessorios">
         <h1>Alimentação</h1>
       </li>
       <li class="optionLinkWrapper">
-        <img src="../../public/imgs/accessories.svg" alt="Acessorios">
+        <img src="../../public/imgs/toys.svg" alt="Acessorios">
         <h1>Brinquedos</h1>
       </li>
       <li class="optionLinkWrapper">
-        <img src="../../public/imgs/accessories.svg" alt="Acessorios">
+        <img src="../../public/imgs/medicines.svg" alt="Acessorios">
         <h1>Medicamentos</h1>
       </li>
       <li class="optionLinkWrapper">
-        <img src="../../public/imgs/accessories.svg" alt="Acessorios">
+        <img src="../../public/imgs/hygiene.svg" alt="Acessorios">
         <h1>Higiene e Limpeza</h1>
       </li>
     </ul>
