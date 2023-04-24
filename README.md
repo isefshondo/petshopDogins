@@ -20,7 +20,7 @@ bem como a definição de seus preços, descrições e imagens.</p><br>
    └── 📄 users.php     <!-- Exportação dos documentos contidos na coleção 'users'. Possui o documento com usuário e senha 'admin' -->
 ```
 
-<li><strong>📁 public/</strong>: Contém os arquivos utilizados na aplicação pelo Ecommerce e CMS</li><br><br>
+<li><strong>📁 public/</strong>: Contém os demais arquivos estáticos utilizados na aplicação pelo Ecommerce e CMS (Javascript, CSS, imagens)</li><br><br>
 
 
 ## Como rodar este projeto?
