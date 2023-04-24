@@ -4,7 +4,24 @@ reuniões diárias e retrospectivas para entregar um produto de alta qualidade d
 
 ###### Descrição
 <p> O projeto consiste em um ecommerce onde um administrador poderá realizar o gerenciamento dos produtos cadastrados, incluindo a adição, edição e exclusão de produtos, 
-bem como a definição de seus preços, descrições e imagens.</p>
+bem como a definição de seus preços, descrições e imagens.</p><br>
+
+## Arquitetura de Arquivos
+
+<li><strong>📁 app/</strong>:  Diretório contendo a implementação do E-commerce, onde os clientes poderão visualizar os produtos, realizar compras, entre outras atividades relacionadas ao uso da plataforma.</li><br>
+<li><strong>📁 cms/</strong>: Diretório onde se encontra o sistema de gerenciamento do E-commerce. É através deste sistema que o administrador poderá cadastrar, atualizar ou excluir produtos, gerenciar pedidos e usuários, entre outras atividades de gerenciamento.</li><br>
+<li><strong>📁 config/</strong>: Contém o arquivo de conexão com o banco de dados, responsável por estabelecer a conexão com o banco de dados utilizado pela aplicação.</li><br>
+
+```
+📁 config/  
+   ├── 📁 composer/     <!-- Gerenciador de depêndencias necessário para manipulação do MongoDB com PHP -->
+   ├── 📄 conn.php      <!-- Arquivo de conexão com o banco de dados -->
+   ├── 📄 products.json <!-- Exportação dos documentos contidos na coleção 'products' -->
+   └── 📄 users.php     <!-- Exportação dos documentos contidos na coleção 'users'. Possui o documento com usuário e senha 'admin'
+```
+
+<li><strong>📁 public/</strong>: Contém os arquivos utilizados na aplicação pelo Ecommerce e CMS</li><br><br>
+
 
 ## Como rodar este projeto?
 
@@ -21,7 +38,7 @@ git clone https://github.com/isefsh/petshopDogins.git
 <li>XAMPP</li>
 <li>PHP (versão 7.2 ou superior)</li>
 <li>MongoDB</li>
-<li>Composer</li>
+<li>Composer</li><br>
 
 ## Verificando a versão do PHP
 
@@ -39,6 +56,7 @@ git clone https://github.com/isefsh/petshopDogins.git
     } 
 ?>
 ```
+<br>
 
 ## Instalação da extensão do MongoDB
 
@@ -46,7 +64,7 @@ git clone https://github.com/isefsh/petshopDogins.git
 
 1. Acesse https://pecl.php.net/package/mongodb/ e baixe a versão correspondente à sua versão do PHP e do sistema operacional.
 
-2. Extraia o arquivo php_mongodb.dll para o diretório que contém as extensões do PHP no XAMPP (ou no seu servidor web). Por exemplo, se você estiver usando o XAMPP no Windows, o caminho padrão para o diretório de extensões é: C:\xampp\php\ext
+2. Extraia o arquivo <strong>php_mongodb.dll</strong> para o diretório que contém as extensões do PHP no XAMPP (ou no seu servidor web). Por exemplo, se você estiver usando o XAMPP no Windows, o caminho padrão para o diretório de extensões é: C:\xampp\php\ext
 
 3. Adicione a extensão do MongoDB ao seu arquivo php.ini. Abra o arquivo php.ini em um editor de texto e adicione a seguinte linha no final do arquivo:
 
