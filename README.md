@@ -14,10 +14,11 @@ bem como a definição de seus preços, descrições e imagens.</p>
 git clone https://github.com/isefsh/petshopDogins.git
 ```
 
-#Configurando o MongoDB para utilização com PHP
+# Configurando o MongoDB para utilização com PHP
 
 ###### Requisitos
 
+<li>XAMPP</li>
 <li>PHP (versão 7.2 ou superior)</li>
 <li>MongoDB</li>
 <li>Composer</li>
@@ -39,4 +40,18 @@ git clone https://github.com/isefsh/petshopDogins.git
 ?>
 ```
 
-<p></p>
+## Instalação da extensão do MongoDB
+
+<p>Caso o MongoDB não esteja instalado em seu servidor, você pode baixar a extensão PHP do MongoDB da página oficial do PECL (PHP Extension Community Library)</p>
+
+1. Acesse https://pecl.php.net/package/mongodb/ e baixe a versão correspondente à sua versão do PHP e do sistema operacional.
+
+2. Extraia o arquivo php_mongodb.dll para o diretório que contém as extensões do PHP no XAMPP (ou no seu servidor web). Por exemplo, se você estiver usando o XAMPP no Windows, o caminho padrão para o diretório de extensões é: C:\xampp\php\ext
+
+3. Adicione a extensão do MongoDB ao seu arquivo php.ini. Abra o arquivo php.ini em um editor de texto e adicione a seguinte linha no final do arquivo:
+
+```
+extension=php_mongodb.dll
+```
+
+4. Salve o arquivo php.ini e reinicie o servidor web (Apache, Nginx, etc.) para que as alterações tenham efeito.
