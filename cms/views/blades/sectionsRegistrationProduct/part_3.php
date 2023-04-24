@@ -11,7 +11,7 @@
         </div>
         <div class="form-floating_input mb-4">
             <span class="currency-symbol">R$</span>
-            <input type="number" id="productPrice" name="productPrice" data-limit="7" rows="2" value="<?php echo $data['productPrice'] ?? ""; ?>" required>
+            <input type="text" id="productPrice" name="productPrice" data-limit="7" rows="2" value="<?php echo $data['productPrice'] ?? ""; ?>" required>
         </div>
         <div class="form-floating_info">
             <span class="yellowAlertIcon"></span>

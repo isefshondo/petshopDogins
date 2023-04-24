@@ -2,22 +2,12 @@
     include("../../controllers/scripts/session.php");
 
     session_start();
-    session_destroy();
-        
-/*
-    $data = $_SESSION['doc_tmp'] ?? "";
 
-    session_write_close();
-
-    if(isset($data['caminhos_imagens'])){
-        foreach($data['caminhos_imagens'] as $file){
-            deleteFile($file);
-            echo $file;
-            var_dump($file);
-        }
+    if(isset($_SESSION['doc_tmp'])){
+        unset($_SESSION['doc_tmp']);
     }
 
-    limpar_session_object('doc_tmp');
-*/
+    session_write_close();
+    
     header("location:../views/homePage.php");
 ?>

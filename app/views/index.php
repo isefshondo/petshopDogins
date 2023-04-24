@@ -30,9 +30,11 @@ include("../../public/utils/components/productCard.php");
     createHeaderSection("Produtos AUUdaciosos", true);
     ?>
     <ul class="productsWrapper">
+      <a href="./viewProduct.php">
       <?php
       createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       ?>
+      </a>
     </ul>
   </section>
   <section id="productsCategories">
@@ -67,9 +69,13 @@ include("../../public/utils/components/productCard.php");
     createHeaderSection("Produtos AUUdaciosos", true);
     ?>
     <ul class="productsWrapper">
+      
+      <a href="./viewProduct.php">
       <?php
       createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
       ?>
+      </a>
+      
     </ul>
   </section>
   <section id="searchByPets">

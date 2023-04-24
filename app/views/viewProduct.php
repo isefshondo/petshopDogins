@@ -15,9 +15,48 @@ include("./components/productInformation.php");
       style = "display: grid; grid-template-columns: 3.5fr 1fr; column-gap: 1.875em; margin-bottom: 3em;"
     >
       <section id = "viewProductCard" class = "viewProductCard">
-        <?php
-        createProductImageViewer();
-        ?>
+        <div class="viewProductCard_head"><span class="houseIcon"></span><p>Gatos > Roupas e Acessórios > Fantasias > Roupinha de Abelha </p></div>
+        <div class="viewProductCard_container">
+          <?php
+          createProductImageViewer();
+          ?>
+          <div>
+            <div class="box-2 iconHeart"></div>
+            <div class="box-2 iconShare"></div>
+          </div>
+          <div>
+            <div>
+              <div class="assess">
+                <div class="box"><span class="iconStar"></span>4,5 129</div>
+                <div class="box"><span class="iconMsg"></span>4,5</div>
+              </div>
+              <div>
+                <h2 class="viewProduct_title">Fantasia para Gatos de Unicórnio e Leão</h2>
+                <div>
+                  <h3 class="viewProduct_subtitle">Tamanhos</h3>
+                  <div class="assess">  
+                    <label for="P" class="box-2"><input type="checkbox" name="sizes[]" id="P" class="d-none">P</label>
+                    <label for="M" class="box-2"><input type="checkbox" name="sizes[]" id="M" class="d-none">M</label>
+                    <label for="G" class="box-2"><input type="checkbox" name="sizes[]" id="G" class="d-none">G</label>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="viewProduct_subtitle">Variações</h3>
+                  <div class="assess">  
+                    <label for="Unicornio" class="box"><input type="checkbox" name="sizes[]" id="Unicornio" class="d-none">Unicórnio</label>
+                    <label for="Leao" class="box"><input type="checkbox" name="sizes[]" id="Leao" class="d-none">Leão</label>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="viewProduct_subtitle">Quantidade</h3>
+                  <div>  
+                    <input type="number" name="qt" id="qt" value="1">
+                  </div>
+                </div>
+              <div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id = "viewPriceCard" class = "viewPriceCard">
         <header class = "chooseBuyFrequently">

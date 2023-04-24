@@ -67,7 +67,7 @@ input[type = "search"]::placeholder {
 }
 
 .searchButton {
-  background: transparent url(../imgs/searchIcon.svg) no-repeat center;
+  background: transparent url(../../public/imgs/searchIcon.svg) no-repeat center;
   border: none;
   border-radius: inherit;
   color: transparent;
@@ -107,7 +107,7 @@ a:visited {
 }
 
 .likeIcon {
-  background: url(../imgs/nfHeartIcon.svg) no-repeat;
+  background: url(../../public/imgs/nfHeartIcon.svg) no-repeat;
   background-size: cover;
   display: block;
   width: 1.75em;
@@ -123,11 +123,11 @@ a:visited {
 }
 
 .cartIcon {
-  background: url(../imgs/cartIcon.svg) no-repeat;
+  background: url(../../public/imgs/cartIcon.svg) no-repeat;
 }
 
 .blackCartIcon {
-  background: url(../imgs/blackCartIcon.svg) no-repeat;
+  background: url(../../public/imgs/blackCartIcon.svg) no-repeat;
 }
 
 .navCategory {
@@ -173,7 +173,7 @@ a:visited {
 }
 
 .heartIcon {
-  background: transparent url(../imgs/fHeartIcon.svg) no-repeat;
+  background: transparent url(../../public/imgs/fHeartIcon.svg) no-repeat;
   display: block;
   width: 1.875em;
   height: 26px;
@@ -242,13 +242,13 @@ footer {
 }
 
 .socialInsta {
-  background: transparent url(../imgs/iconInstagram.svg) no-repeat center;
+  background: transparent url(../../public/imgs/iconInstagram.svg) no-repeat center;
   width: 38px;
   height: 38px;
 }
 
 .socialFacebook {
-  background: transparent url(../imgs/iconFacebook.svg) no-repeat center;
+  background: transparent url(../../public/imgs/iconFacebook.svg) no-repeat center;
   width: 38px;
   height: 38px;
 }
@@ -575,12 +575,13 @@ footer {
 }
 
 #purchaseFrequently:checked {
-  background: #FFF url(../imgs/checked.svg) no-repeat center;
+  background: #FFF url(../../public/imgs/checked.svg) no-repeat center;
 }
 
 /* Starting it off well */
+
+.viewProductCard,
 .viewPriceCard {
-  width: 410px;
   background-color: #FFF;
   border-radius: 20px;
   border-width: 0;
@@ -590,6 +591,11 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 64px;
+
+}
+
+.viewPriceCard {
+  width: 410px;
 }
 
 .chooseBuyFrequently {
@@ -621,7 +627,7 @@ footer {
 .disclaimerIcon {
   width: 30px;
   height: 30px;
-  background: transparent url(../imgs/disclaimer.svg) no-repeat center;
+  background: transparent url(../../public/imgs/disclaimer.svg) no-repeat center;
 }
 
 .chooseBuyFrequently h1 {
@@ -648,7 +654,7 @@ footer {
   display: block;
   width: 75px;
   height: 45px;
-  background: transparent url(../imgs/checkIcon.svg) no-repeat center;
+  background: transparent url(../../public/imgs/checkIcon.svg) no-repeat center;
 }
 
 .chooseBuyFrequently p {
@@ -807,23 +813,23 @@ footer {
 }
 
 .infoIcon {
-  background: url(../imgs/icon/infomations.svg) no-repeat center;
+  background: url(../../public/imgs/icon/infomations.svg) no-repeat center;
 }
 
 .specificIcon {
-  background: url(../imgs/icon/especificIcon.svg) no-repeat center;
+  background: url(../../public/imgs/icon/especificIcon.svg) no-repeat center;
 }
 
 .ratingsIcon {
-  background: url(../imgs/icon/ratings.svg) no-repeat center;
+  background: url(../../public/imgs/icon/ratings.svg) no-repeat center;
 }
 
 .questionsIcon {
-  background: url(../imgs/icon/questions.svg) no-repeat center;
+  background: url(../../public/imgs/icon/questions.svg) no-repeat center;
 }
 
 .bottomArrow {
-  background: url(../imgs/icon/bottom-arrow.svg) no-repeat center;
+  background: url(../../public/imgs/icon/bottom-arrow.svg) no-repeat center;
   border: none;
 }
 
@@ -852,17 +858,91 @@ footer {
 }
 
 .viewProductImages{
+  width: 50%;
   height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: 1px solid #49A971;
+}
+
+.assess{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5em;
+}
+
+.assess > :nth-child(n){
+  margin-right: 1.5em;
 }
 
 #viwerProductImage{
-  width: 60%;
+  width: 80%;
   height: 100%;
-  border: 1px solid #000;
+}
+
+.viewProduct_title{
+  font-size: 24px;
+  color: #000000;
+  margin: 1em 0 2em;
+}
+
+.iconStar,
+.iconMsg{
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.iconStar{
+  background-image: url("../../public/imgs/icons/iconStar.svg");
+}
+
+.iconMsg{
+  background-image: url("../../public/imgs/icons/iconMsg.svg");
+}
+
+.viewProduct_subtitle{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  letter-spacing: -0.015em;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  margin: 0.5em 0;
+}
+
+.houseIcon{
+  background-image: url(../../public/imgs/icons/houseIcon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 24px;
+  width: 24px;
+  margin-right: 0.5em;
+}
+
+.viewProductCard_head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: -0.015em;
+
+  color: rgba(41, 45, 50, 0.5);
+}
+
+.viewProductCard_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .otherProductImages{
@@ -872,15 +952,47 @@ footer {
   justify-content: space-between;
 }
 
+.box,
+.box-2,
 .otherProductImages_item{
-  width: 80px;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--secondaryComponents);
   border-radius: 10px;
   cursor: pointer;
+}
+
+
+.iconShare,
+.iconHeart{
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+}
+
+.iconHeart{
+  background-image: url(../../public/imgs/icons/iconHeart.svg);
+  margin-bottom: 1.5em;
+}
+
+.iconShare{
+  background-image: url(../../public/imgs/icons/iconShare.png);
+}
+
+.box{
+  height: 50px;
+  padding: 0 2em;
+}
+
+.box-2{
+  height: 50px;
+  width: 50px;
+}
+
+.otherProductImages_item{
+  width: 80px;
+  height: 80px;
 }
 
 .otherProductImages_item.active{
@@ -897,7 +1009,7 @@ footer {
 }
 
 #productImage{
-  max-width: 80%;
+  max-width: 90%;
   max-height: 100%;
 }
 
@@ -945,7 +1057,7 @@ footer {
 }
 
 .selectTheProduct:checked {
-  background: var(--bgComponents) url(../imgs/checkIcon.svg) no-repeat center;
+  background: var(--bgComponents) url(../../public/imgs/checkIcon.svg) no-repeat center;
   background-size: 29px;
   border-color: var(--bgComponents);
 }
@@ -1219,7 +1331,7 @@ label{
 
 /* ICONS */
 .newProductIcon{
-  background: url(../imgs/icons/new_product.svg) no-repeat;
+  background: url(../../public/imgs/icons/new_product.svg) no-repeat;
   background-size: cover;
   display: block;
   width: 1.3em;
@@ -1227,7 +1339,7 @@ label{
 }
 
 .yellowAlertIcon{
-  background: url(../imgs/icons/yellow_alert.png) no-repeat;
+  background: url(../../public/imgs/icons/yellow_alert.png) no-repeat;
   background-size: cover;
   display: block;
   width: 1.8em;
@@ -1235,7 +1347,7 @@ label{
 }
 
 .photoIcon{
-  background: url(../imgs/icons/photoIcon.svg) no-repeat;
+  background: url(../../public/imgs/icons/photoIcon.svg) no-repeat;
   background-size: cover;
   display: block;
   width: 2.2em;
@@ -1243,7 +1355,7 @@ label{
 }
 
 .redHeartIcon{
-  background: url(../imgs/icons/heartIcon_.svg) no-repeat;
+  background: url(../../public/imgs/icons/heartIcon_.svg) no-repeat;
   background-size: cover;
   display: block;
   width: 1.698em;
@@ -1545,7 +1657,7 @@ li{
 }
 
 .info{
-    background: transparent url(../imgs/icons/info.svg) no-repeat center;
+    background: transparent url(../../public/imgs/icons/info.svg) no-repeat center;
     display: flex;
     background-size: contain;
     width: 25px;
@@ -1719,7 +1831,7 @@ li{
     justify-content: space-evenly;
 }
 .Iconfechar{
-    background: transparent url(../imgs/icons/fechar.svg) no-repeat center;
+    background: transparent url(../../public/imgs/icons/fechar.svg) no-repeat center;
     display: flex;
     align-self: flex-end;
     background-size: contain;
@@ -1796,7 +1908,7 @@ li{
     color: #777;
 }
 .Iconinfo{
-    background: transparent url(../imgs/icons/info.svg) no-repeat center;
+    background: transparent url(../../public/imgs/icons/info.svg) no-repeat center;
     display: flex;
     align-self: flex-start;
     background-size: contain;

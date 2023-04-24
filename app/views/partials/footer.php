@@ -27,7 +27,7 @@
     </ul>
   </nav>
   <div class = "footButtonWrapper">
-    <button class = "btnLoginSignin">Entrar/Cadastrar</button>
-    <button class = "btnSeller">Sou vendedor</button>
+    <a href="./404.php" class = "btnLoginSignin">Entrar/Cadastrar</a>
+    <a href="../../cms/views/" class = "btnSeller">Sou vendedor</a>
   </div>
 </footer>
