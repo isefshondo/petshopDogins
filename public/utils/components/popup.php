@@ -16,11 +16,11 @@
         <span class = "Iconfechar"></span>
         <h3 class="modal-del-title">ATENÇÃO!</h3> 
         <div class="modal-del-text">Tem certeza que deseja deletar este produto?</div>
-            <form action="../models/delete.php" method="post" class="d-flex">
+            <form class="d-flex">
                 <input type="hidden" name="id">
                 <div class="button-del-product"> 
-                    <a type="button" id="btnModalCancel" class="btn-terciary">Cancelar</a> 
-                    <button class="btn-danger">Deletar</button> 
+                    <a id="btnModalCancel" class="btn-terciary">Cancelar</a> 
+                    <button type="button" class="btn-danger" id="btnDelete">Deletar</button> 
                 </div>                 
             </form>             
         </div>

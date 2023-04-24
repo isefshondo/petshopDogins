@@ -1,5 +1,5 @@
-const productsWrapper = [...document.querySelectorAll('.productsWrapper')];
-const brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
+let productsWrapper = [...document.querySelectorAll('.productsWrapper')];
+let brandsWrapper = [...document.querySelectorAll('.brandsHolder')];
 const mainCarousel = document.querySelector('.imgs-slider');
 let currentImgIndex = 0;
 const sectionToggleInfo = [...document.querySelectorAll('#sectionToggle')];
@@ -14,24 +14,35 @@ const formFloatingInputs = [...document.querySelectorAll('.form-floating_input >
 const universalProductCode_checkbox = document.querySelector('.universalProductCode_checkbox');
 const categoriesOptions = [...document.querySelectorAll('.categoriesOption')];
 
-productsWrapper.forEach((item, i) => {
-  const previousButton = [...document.querySelectorAll('.leftButton')];
-  const nextButton = [...document.querySelectorAll('.rightButton')];
-  let wrapperDimensions = item.getBoundingClientRect();
-  let wrapperWidth = wrapperDimensions.width;
-
-  previousButton[i].addEventListener('click', () => {
-    item.scrollLeft -= wrapperWidth;
+function scrollLeftRight(){
+  productsWrapper.forEach((item, i) => {
+    let previousButton = [...document.querySelectorAll('.leftButton')];
+    let nextButton = [...document.querySelectorAll('.rightButton')];
+    let wrapperDimensions = item.getBoundingClientRect();
+    let wrapperWidth = wrapperDimensions.width;
+  
+    previousButton[i].addEventListener('click', () => {
+      item.scrollLeft -= wrapperWidth;
+    });
+  
+    nextButton[i].addEventListener('click', () => {
+      item.scrollLeft += wrapperWidth;
+      console.log(nextButton);
+    });
   });
+}
 
-  nextButton[i].addEventListener('click', () => {
-    item.scrollLeft += wrapperWidth;
-  });
-});
+scrollLeftRight();
+
+function updateProductsWrapper(){
+  productsWrapper = [...document.querySelectorAll('.productsWrapper')];
+  
+  scrollLeftRight();
+}
 
 brandsWrapper.forEach((item, i) => {
-  const previousButton = [...document.querySelectorAll('.btnPrevPartnerBrands')];
-  const nextButton = [...document.querySelectorAll('.btnNextPartnerBrands')];
+  let previousButton = [...document.querySelectorAll('.btnPrevPartnerBrands')];
+  let nextButton = [...document.querySelectorAll('.btnNextPartnerBrands')];
   let brandWrapperDimension = item.getBoundingClientRect();
   let brandsWrapperWidth = brandWrapperDimension.width;
 
@@ -358,6 +369,28 @@ const btnModalCancel = modalDelete.querySelector("#btnModalCancel");
       modalDelete.classList.remove('d-none');
     });
   });
+btnModalDelete = document.getElementById("btnDelete");
+btnModalDelete.addEventListener('click', () => {
+  let wrapper = btnModalDelete.closest('form');
+  const id = wrapper.querySelector('input[name="id"]').value;
+  const formData = new FormData(wrapper);
+  
+  modalDelete.classList.add('d-none');
+
+  fetch("../models/delete.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((msg) => {
+      setTimeout(() => {
+        showAlert(msg, true);
+      }, 500); // Aguarda 0.5s antes de exibir o alerta
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
 
 btnModalCancel.addEventListener('click', () => {
   modalDelete.classList.add('d-none');
@@ -388,13 +421,18 @@ selectSize = (size) => {
   return labelCheckbox;
 }
 
-showAlert = (msg) => {
+
+showAlert = (msg, reload = false) => {
   const alert = document.getElementById('alert');
 
   alert.classList.remove('d-none');
   alert.querySelector(".modal-del-text").textContent = msg;
   alert.querySelector(".btn-danger").addEventListener('click', () => {
     alert.classList.add('d-none');
+
+    if(reload==true){
+      window.location.reload();
+    }
   });
 }
 

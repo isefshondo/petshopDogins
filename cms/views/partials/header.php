@@ -10,7 +10,7 @@
     <div class="form-buttons w-25">  
       <div class="buttonWrapper">
         <a href="../../app/views/">Voltar à loja</a>
-        <button class = "btnSeller">Sair/Logout</button>
+        <a href="../models/logout.php" class = "btnSeller">Sair/Logout</a>
       </div>
     </div>
   </div>

@@ -11,8 +11,11 @@ $('input[name="filters[]"]').change(function(){
         success: function(result) {
             // Exibir o resultado na página sem recarregar a página inteira
             $("#filters").html(result);
+
+            updateProductsWrapper();
         }
     });
+
 });
 
 $(document).ready(function() {
@@ -29,7 +32,48 @@ $(document).ready(function() {
         success: function(result) {
 
           $('#resultados').html(result);
+          
+          updateProductsWrapper();
         }
       });
     });
+
+    $('#forms').submit(function(event) {
+      event.preventDefault();
+      var formData = $(this).serialize();
+      $.ajax({
+        url: '../models/login.php',
+        method: 'POST',
+        data: formData,
+        dataType: 'json'
+      })
+      .done(function(response) {
+        if(response.status === 'success'){
+          window.location.href = response.redirect;
+        }else{
+          showAlert(response.message);
+        }   
+      })
+      .fail(function(xhr, status, error) {
+        // Exibir uma mensagem de erro genérica para o usuário
+        showAlert('Ocorreu um erro ao processar a solicitação.');
+        console.error(xhr.responseText);
+      });
+
+      return false; // adicionando esta linha
+    });
   });
+
+  showAlert = (msg, reload = false) => {
+    const alert = document.getElementById('alert');
+  
+    alert.classList.remove('d-none');
+    alert.querySelector(".modal-del-text").textContent = msg;
+    alert.querySelector(".btn-danger").addEventListener('click', () => {
+      alert.classList.add('d-none');
+  
+      if(reload==true){
+        window.location.reload();
+      }
+    });
+  }  

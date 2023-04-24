@@ -1,8 +1,16 @@
-<?php
+    <?php
     if(isset($data)){
         if(is_a($data, 'MongoDB\Model\BSONDocument')){
-            $colors = $data['productColors']->getArrayCopy();
-            $data_sizes = $data['sizes']->getArrayCopy();
+            if(isset($data['productColors'])){
+                $colors = $data['productColors']->getArrayCopy();
+            }else{
+                $colors = $data['productColors'] ?? null;
+            }
+            if(isset($data['sizes'])){
+                $data_sizes = $data['sizes']->getArrayCopy();
+            }else{
+                $data_sizes = $data['sizes'] ?? null;
+            }
         }else{
             $colors = $data['productColors'];
             $data_sizes = $data['sizes'];

@@ -45,10 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $base64 = $bin;
         }
 
+        unset($_SESSION['doc_tmp']);
+        
         $insert = $collection->insertOne($doc_tmp);
         
-        session_destroy();
-        
+           
         header("location:../views/homePage.php");
         
 

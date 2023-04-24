@@ -1,4 +1,14 @@
-<?php 
+<?php
+    session_start();
+
+    if (!isset($_SESSION['username'])) {
+        // Redirecionar o usuário para a página de login
+        header('location:./index.php');
+        exit();
+    }
+    session_write_close();
+    
+
     include("../../config/conn.php");
     include("../../public/utils/components/popup.php");
     include("./blades/header.php");
@@ -84,14 +94,17 @@
                 echo "<div id='resultados'></div>";
                 echo "<div id='filters'></div>";
                 
-                if($collection->count(["amountSales" => ['$exists' => true]]) > 0){
-                    $bestSellers = $collection->find(["amountSales" => ['$exists' => true]], ["sort" => ["amountSales" => -1], 'limit' => 4]);
-                    createProductList("Mais comprados", "bg-secondary", $bestSellers);
-                }
-        
-                if($collection->count(['$where' => 'this.productStock <= this.minStock']) > 0){       
-                    $lowSotck = $collection->find(['$where' => 'this.productStock <= this.minStock'], ['limit' => 4]);
-                    createProductList("Baixo Estoque", "bg-terciary", $lowSotck);
+                $page = $_GET['page'] ?? 0;
+                if($page < 2){
+                    if($collection->count(["amountSales" => ['$exists' => true]]) > 0){
+                        $bestSellers = $collection->find(["amountSales" => ['$exists' => true]], ["sort" => ["amountSales" => -1], 'limit' => 4]);
+                        createProductList("Mais comprados", "bg-secondary", $bestSellers);
+                    }
+            
+                    if($collection->count(['$where' => 'this.productStock <= this.minStock']) > 0){       
+                        $lowSotck = $collection->find(['$where' => 'this.productStock <= this.minStock'], ['limit' => 4]);
+                        createProductList("Baixo Estoque", "bg-terciary", $lowSotck);
+                    }
                 }
                 
                 if($collection->count() > 0){
@@ -107,7 +120,7 @@
 
 <section class="mb-4">
     <?php
-        createPagination($total, 15, $_GET['page'] ?? 1, "homePage.php");
+        createPagination($total, 12, $_GET['page'] ?? 1, "homePage.php");
     ?>
 </section>
 <?php include("./blades/footer.php"); ?>

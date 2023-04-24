@@ -1,7 +1,16 @@
 <?php 
+    session_start();
+
+    if(isset($_SESSION['username'])){
+        // Redirecionar o usuário para a página de login
+        header('location:./homePage.php');
+        exit();
+    }
+    session_write_close();
+    
     include('../../app/views/blades/header.php');
     include("../../app/views/components/sectionHeader.php");
-    include("../../app/views/components/couponNotice.php");
+    include("../../public/utils/components/popup.php");
 ?>
 <header>
   <div class="headerContainer">
@@ -33,6 +42,7 @@
     </ul>
   </nav>
 </header>
+<?php include("../../app/views/components/couponNotice.php"); ?>
 <section id="img-login">
     <img src="../../public/imgs/login.png">
 </section>
@@ -48,7 +58,7 @@
             <p>Senha</p>
             <input type="password" name="senha"><br>
             <div class="btnLoginWrapper">
-                <button class="btnLogin">Entrar</button><br>
+                <button class="btnLogin" >Entrar</button><br>
             </div>
         </div>
         <div id="text-link">
@@ -58,6 +68,5 @@
     </form>
 </section>
 <?php 
-    include('../../app/views/partials/footer.php');
-    include('../../app/views/blades/footer.php');
+    include('./blades/footer.php');
 ?>

@@ -8,5 +8,6 @@
     <link rel="stylesheet" href="../../public/styles/styles.css">
     <link rel="stylesheet" href="../../public/styles/media-query.css">
     <link rel="icon" href="../public/imgs/icon/doginsIcon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>

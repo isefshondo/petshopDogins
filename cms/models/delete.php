@@ -6,10 +6,10 @@
     $result = $collection->deleteOne(['_id' => new MongoDB\BSON\ObjectID($_POST["id"])]);
 
     if($result->getDeletedCount() === 1){
-        echo "Documento excluído com sucesso";
+        echo "Produto excluído com sucesso";
     }else{
-        echo "Não foi possível excluir o documento";
+        echo "Não foi possível excluir o produto";
     }
 
-    header("location:../views/homePage.php");
+   // header("location:../views/homePage.php");
 ?>
