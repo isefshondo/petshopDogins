@@ -10,7 +10,7 @@ bem como a definição de seus preços, descrições e imagens.</p><br>
 
 <li><strong>📁 app/</strong>:  Diretório contendo a implementação do E-commerce, onde os clientes poderão visualizar os produtos, realizar compras, entre outras atividades relacionadas ao uso da plataforma.</li><br>
 <li><strong>📁 cms/</strong>: Diretório onde se encontra o sistema de gerenciamento do E-commerce. É através deste sistema que o administrador poderá cadastrar, atualizar ou excluir produtos, entre outras atividades de gerenciamento.</li><br>
-<li><strong>📁 config/</strong>: Contém o arquivo de conexão com o banco de dados, responsável por estabelecer a conexão com o banco de dados utilizado pela aplicação.</li><br>
+<li><strong>📁 config/</strong>: Contém o arquivo responsável por estabelecer a conexão com o banco de dados utilizado pela aplicação.</li><br>
 
 ```
 📁 config/  
