@@ -14,7 +14,7 @@
 ?>
 <header>
   <div class="headerContainer">
-    <img src="../../public/imgs/logo.svg" alt="Dogin's Logo">
+    <a href="../../app/views/"><img src="../../public/imgs/logo.svg" alt="Dogin's Logo"></a>
     <form class = "searchForm">
       <input type="search" name="searchProduct" id="searchProduct" placeholder = "O que seu pet precisa?">
       <button type="submit" class = "searchButton">Search</button>
