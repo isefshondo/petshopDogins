@@ -8,7 +8,7 @@ function createProductCard($imgName, $productName, $brandName, $oldPrice, $newPr
   echo 
   "<li class='productCard'>".
     "<figure class='productImg'>".
-      "<img src='../../public/imgs/".$imgName."' alt='Produtos AUUdaciosos'>".
+      "<img src='data:image/jpeg;base64,".$imgName."' alt='Produtos AUUdaciosos'>".
     "</figure>".
     "<hgroup class='productDesc'>".
       "<h2>".$productName."</h2>".

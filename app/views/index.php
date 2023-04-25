@@ -1,4 +1,6 @@
 <?php
+include("../../config/conn.php");
+$collection = $db->products;
 include("./blades/header.php");
 include("./partials/header.php");
 include("./components/sectionHeader.php");
@@ -32,7 +34,11 @@ include("../../public/utils/components/productCard.php");
     <ul class="productsWrapper">
       <a href="./viewProduct.php">
       <?php
-      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      $products = $collection->find();
+      foreach($products as $key) {
+        $img = $key['productImages'][0];
+        createProductCard($img, $key['productName'], $key['brandName'], $key['productPrice'], $key['productStock']);
+      }
       ?>
       </a>
     </ul>
@@ -72,7 +78,11 @@ include("../../public/utils/components/productCard.php");
       
       <a href="./viewProduct.php">
       <?php
-      createProductCard("firstToy.png", "Nome do produto", "Marca do produto", "192,90", "80,90");
+      $products = $collection->find();
+      foreach($products as $key) {
+        $img = $key['productImages'][0];
+        createProductCard($img, $key['productName'], $key['brandName'], $key['productPrice'], $key['productStock']);
+      }
       ?>
       </a>
       
