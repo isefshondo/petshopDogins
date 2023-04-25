@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Verifica se o input de productImages foi enviado
-    if (!empty($_FILES['productImages']['name'][0])) {
+    if(!empty($_FILES['productImages']['name'][0])){
         // Loop através de cada imagem e a codifica em base64
         for ($i = 0; $i < count($_FILES['productImages']['name']); $i++) {
             $tmpFilePath = $_FILES['productImages']['tmp_name'][$i];
@@ -31,6 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Adiciona a imagem codificada em base64 no array $doc_tmp
                 $doc_tmp['productImages'][] = $base64;
             }
+        }
+    }else{
+        if($_GET['part'] == 4){
+            // Carrega imagem padrão
+            $defaultImagePath = '../../public/imgs/doginsNotFound.png';
+            $content = file_get_contents($defaultImagePath);
+            $base64 = base64_encode($content);
+            $doc_tmp['productImages'][] = $base64;
         }
     }
 

@@ -5,7 +5,7 @@
     <div class="drop-area" id="drop-area">
         <label for="productImages" class="drop-area_info">
             <span class="photoIcon mb-2"></span>
-            <p>Adicione ou arraste suas</p>
+            <p>Adicione  suas</p>
             <p>fotos aqui</p>
             <input type="file" accept="image/*" name="productImages[]" id="productImages" multiple data-limit="5">
         </label>
