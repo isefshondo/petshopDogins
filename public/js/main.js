@@ -9,7 +9,7 @@ let purchaseFrequentlyContainer = document.querySelectorAll('.purchaseFrequently
 
 const otherProductImages = [...document.querySelectorAll('.otherProductImages_item')];
 
-const productCards = [...document.querySelectorAll('.productCardWrapper')];
+let productCards = [...document.querySelectorAll('.productCardWrapper')];
 const formFloatingInputs = [...document.querySelectorAll('.form-floating_input > textarea, .form-floating_input > input[type="text"], input[type="number"]')];
 const universalProductCode_checkbox = document.querySelector('.universalProductCode_checkbox');
 const categoriesOptions = [...document.querySelectorAll('.categoriesOption')];
@@ -34,10 +34,29 @@ function scrollLeftRight(){
 
 scrollLeftRight();
 
+function productCardMask(){
+  productCards.forEach((item, i) => {
+    productCards[i].addEventListener('mouseover', () => { 
+      productCard = productCards[i].querySelector('.productCardMask');
+      productCard.classList.remove('d-none');
+      productCard.classList.add('d-flex');
+    });
+    productCards[i].addEventListener('mouseout', () => {
+      productCard =  productCards[i].querySelector('.productCardMask');
+      productCard.classList.remove('d-flex');
+      productCard.classList.add('d-none');
+    });
+  });
+}
+
+productCardMask();
+
 function updateProductsWrapper(){
   productsWrapper = [...document.querySelectorAll('.productsWrapper')];
+  productCards = [...document.querySelectorAll('.productCardWrapper')];
   
   scrollLeftRight();
+  productCardMask();
 }
 
 brandsWrapper.forEach((item, i) => {
@@ -212,18 +231,6 @@ function wrapperRemove(btnParent){
   btnsRemove = [...document.querySelectorAll('.remove')];
 }
 
-productCards.forEach((item, i) => {
-  productCards[i].addEventListener('mouseover', () => { 
-    productCard = productCards[i].querySelector('.productCardMask');
-    productCard.classList.remove('d-none');
-    productCard.classList.add('d-flex');
-  });
-  productCards[i].addEventListener('mouseout', () => {
-    productCard =  productCards[i].querySelector('.productCardMask');
-    productCard.classList.remove('d-flex');
-    productCard.classList.add('d-none');
-  });
-});
 
 formFloatingInputs.forEach((item, i) => {
   formFloatingInputs[i].addEventListener('input', () => {
@@ -289,7 +296,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
                 span.addEventListener('click', () => {
                     dropAreaImages.removeChild(figure);
-                    console.log(dropAreaImages);
                 });
             };
             reader.readAsDataURL(input.files[i]);

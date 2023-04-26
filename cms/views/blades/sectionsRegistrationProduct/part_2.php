@@ -13,7 +13,7 @@
             }
         }else{
             $colors = $data['productColors'];
-            $data_sizes = $data['sizes'];
+            $data_sizes = $data['sizes'] ?? null;
         }
     }
 ?>

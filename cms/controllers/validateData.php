@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }else{
         if($_GET['part'] == 4){
             // Carrega imagem padrão
-            $defaultImagePath = '../../public/imgs/doginsNotFound.png';
+            $defaultImagePath = '../../public/imgs/sem_imagem.jpg';
             $content = file_get_contents($defaultImagePath);
             $base64 = base64_encode($content);
             $doc_tmp['productImages'][] = $base64;

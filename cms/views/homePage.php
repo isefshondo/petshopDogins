@@ -41,6 +41,7 @@
             <a href="homePage.php?sub=Brinquedos">Brinquedos</a>
             <a href="homePage.php?sub=Higiêne">Higiêne e Limpeza</a>
             <a href="homePage.php?sub=Medicamentos">Medicamentos</a>
+            <a href="homePage.php">Todos</a>
         </div>
         <hr class="line_horizontal">
         <div class="sidebar_items">
@@ -81,6 +82,9 @@
         <section class="productsList">
             <?php
 
+                // Retorna busca digitada pelo usuario
+                echo "<div id='resultados'></div>";
+
                 if(isset($_GET['sub'])){
                     if($collection->count(["productCategory" => $_GET['sub']]) > 0){
                         $sub = $collection->find(["productCategory" => $_GET['sub']]);
@@ -90,8 +94,7 @@
                     }
                 }
 
-                
-                echo "<div id='resultados'></div>";
+                // Retorna as marcas filtradas pelas checkbox
                 echo "<div id='filters'></div>";
                 
                 $page = $_GET['page'] ?? 0;
