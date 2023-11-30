@@ -1,5 +1,5 @@
 # Petshop Dogin's 🐶💙
-Dogin's é um petshop online com um design AUUdacioso 🐶💙 Nele, você pode vizualizar peodutos em destaque na Home, pesquisar por categoria ou por raça de bixinho, e até ver quais são as marcas mais AUUdaciosas que estão bombando! 💙💙💙
+Dogin's é um petshop online com um design AUUdacioso 🐶💙 Nele, você pode visualizar produtos em destaque na Home, pesquisar por categoria ou por raça de bixinho, e até ver quais são as marcas mais AUUdaciosas que estão bombando! 💙💙💙
 
 ### Bora conhecer?
 <p align="center">
