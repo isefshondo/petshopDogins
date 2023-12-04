@@ -2,12 +2,12 @@
     include("../../config/conn.php");
 
     $collection = $db->products;
-
+    
     $updateFields = [];
     $doc_tmp = [];
-
+    
     $data = $collection->findOne(['_id' => new MongoDB\BSON\ObjectID($_POST['id'])]);
-
+    
     foreach($_POST as $key => $value){
         if($key != 'id' && $key != 'productImages'){
             $updateFields[$key] = $value;
@@ -26,7 +26,7 @@
                     // Lê o conteúdo do arquivo e codifica em base64
                     $content = file_get_contents($tmpFilePath);
                     $base64 = base64_encode($content);
-        
+    
                     // Adiciona a imagem codificada em base64 no array $doc_tmp
                     $doc_tmp[] = $base64;
                 }
@@ -34,15 +34,8 @@
         }
     
         if(!empty($doc_tmp)){
-            // Converte as imagens em base64 para BSON Binary e adiciona no array de atualização
-            $binaries = [];
-            foreach ($doc_tmp as &$base64) {
-                $bin = new MongoDB\BSON\Binary($base64, MongoDB\BSON\Binary::TYPE_GENERIC);
-                $binaries[] = $bin;
-            }
-        
             // Adiciona o array de imagens no array de atualização
-            $updateFields['productImages'] = $binaries;
+            $updateFields['productImages'] = $doc_tmp;
         }
     }
     
@@ -50,12 +43,6 @@
         ['_id' => new MongoDB\BSON\ObjectID($_POST["id"])], 
         ['$set' => $updateFields]
     );
-
-    /*if($result->getModifiedCount() > 0){
-        echo 'Atualização realizada com sucesso!';
-    }else{
-        echo 'Não foi possível atualizar o documento.';
-    }*/
-
+    
     header("location:../views/homePage.php");
 ?>
