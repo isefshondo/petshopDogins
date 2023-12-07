@@ -17,7 +17,7 @@ bem como a definição de seus preços, descrições e imagens. O estoque cadast
 <aside><strong>Este projeto tem como intuito colocar em prática a metodologia Scrum, uma abordagem ágil de gerenciamento de projetos que se baseia em sprints, 
 reuniões diárias e retrospectivas para entregar um produto de alta qualidade de forma eficiente e eficaz.</strong></aside>
 
-## Arquitetura de Arquivos 🐶💙
+## Estrutura de Arquivos 🐶💙
 
 <li><strong>📁 app/</strong>:  Diretório contendo a implementação do E-commerce, onde os clientes poderão visualizar os produtos, realizar compras, entre outras atividades relacionadas ao uso da plataforma.</li><br>
 <li><strong>📁 cms/</strong>: Diretório onde se encontra o sistema de gerenciamento do E-commerce. É através deste sistema que o administrador poderá cadastrar, atualizar ou excluir produtos, entre outras atividades de gerenciamento.</li><br>
@@ -25,10 +25,10 @@ reuniões diárias e retrospectivas para entregar um produto de alta qualidade d
 
 ```
 📁 config/  
-   ├── 📁 composer/     <!-- Gerenciador de depêndencias necessário para manipulação do MongoDB com PHP -->
+   ├── 📁 composer/     <!-- Gerenciador de depêndencias para manipulação do MongoDB com PHP -->
    ├── 📄 conn.php      <!-- Arquivo de conexão com o banco de dados -->
-   ├── 📄 products.json <!-- Exportação dos documentos contidos na coleção 'products' -->
-   └── 📄 users.php     <!-- Exportação dos documentos contidos na coleção 'users'. Possui o documento com usuário e senha 'admin' -->
+   ├── 📄 products.json <!-- Exportação dos documentos da coleção 'products' -->
+   └── 📄 users.php     <!-- Exportação dos documentos da coleção 'users' -->
 ```
 
 <li><strong>📁 public/</strong>: Contém os demais arquivos estáticos utilizados na aplicação pelo Ecommerce e CMS (Javascript, CSS, imagens)</li><br><br>
